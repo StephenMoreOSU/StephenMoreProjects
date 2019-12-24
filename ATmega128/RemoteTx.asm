@@ -1,6 +1,6 @@
 ;***********************************************************
 ;*	
-;*	Stephen_More_and_Braam_Beresford_Lab8_Tx_sourcecode.asm
+;*	RemoteTx.asm
 ;*	
 ;*	This code transmits actions to a specified bot address 
 ;*	using 2400 baud rate 8 bit data transmission, no parity, asynchrounous. 
