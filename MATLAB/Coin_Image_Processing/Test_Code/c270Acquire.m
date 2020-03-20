@@ -13,7 +13,7 @@
 function c270Acquire(vidFileName, quality)
 
     if(quality == "LD")
-        vid = videoinput('winvideo', 2, 'I420_1280x720');
+        vid = videoinput('winvideo', 2, 'I420_640x480');
     else
         vid = videoinput('winvideo', 2, 'I420_1280x720');
     end
