@@ -12,6 +12,8 @@ This is a repository to store code for various ECE and CS related projects
 2. [ FPGA ](#fpga)
 3. [ MATLAB ](#matlab)
 4. [ PYTHON ](#python)
+5. [ BASH ](#bash)
+6. [ C ](#c)
 
 <a name="atmega128"></a>
 ## ATmega128
@@ -36,8 +38,22 @@ Contains project directories for matlab projects
 #### Projects:
 * Coin_Image_Processing
 
-<a name="matlab"></a>
+<a name="python"></a>
 ## PYTHON
-Contains project directories for matlab projects
+Contains project directories for python projects
 #### Projects:
 * gfr_cone_editor_gui
+
+<a name="bash"></a>
+## BASH
+Contains project directories for matlab projects
+#### Projects:
+* compile_simulate_synthesize_sverilog
+* matrix_operations
+
+
+<a name="c"></a>
+## C
+Contains project directories for C projects
+#### Projects:
+* adventure_concurrency
