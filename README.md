@@ -1,7 +1,6 @@
 # StephenMoreProjects
 1. [ Description ](#desc)
 2. [ Directories ](#dirs)
-3. [ Usage tips ](#usage)
 
 <a name="desc"></a>
 ## Description
