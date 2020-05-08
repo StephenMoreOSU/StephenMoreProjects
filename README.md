@@ -46,11 +46,10 @@ Contains project directories for python projects
 
 <a name="bash"></a>
 ## BASH
-Contains project directories for matlab projects
+Contains project directories for bash shell scripts
 #### Projects:
 * compile_simulate_synthesize_sverilog
 * matrix_operations
-
 
 <a name="c"></a>
 ## C
