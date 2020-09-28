@@ -31,6 +31,7 @@ Contains project directories for FPGA related projects
 * DE-1_SoC_HPS
 * NESController
 * PS2Keyboard
+* GCD
 
 <a name="matlab"></a>
 ## MATLAB
