@@ -57,3 +57,4 @@ Contains project directories for bash shell scripts
 Contains project directories for C projects
 #### Projects:
 * adventure_concurrency
+* shell
