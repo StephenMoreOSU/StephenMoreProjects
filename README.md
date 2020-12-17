@@ -9,11 +9,12 @@ This is a repository to store code for various ECE and CS related projects
 <a name="dirs"></a>
 ## Directories
 1. [ ATmega128 ](#atmega128)
-2. [ FPGA ](#fpga)
-3. [ MATLAB ](#matlab)
-4. [ PYTHON ](#python)
-5. [ BASH ](#bash)
-6. [ C ](#c)
+2. [ COMP_ARCH ](#comparch)
+3. [ FPGA ](#fpga)
+4. [ MATLAB ](#matlab)
+5. [ PYTHON ](#python)
+6. [ BASH ](#bash)
+7. [ C ](#c)
 
 <a name="atmega128"></a>
 ## ATmega128
@@ -23,6 +24,14 @@ Contains AVR Assembly code for the ATmega128 microcontroller.
 * RemoteTx.asm 
 * RobotRx.asm
 * RobotRxPWMControl.asm
+
+<a name="comparch"></a>
+## ATmega128
+
+Contains AVR Assembly code for the ATmega128 microcontroller.
+#### Projects:
+* simba_presentation
+* 3bit_branch_predictor_with_benchmarking
 
 <a name="fpga"></a>
 ## FPGA
