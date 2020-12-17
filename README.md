@@ -26,9 +26,9 @@ Contains AVR Assembly code for the ATmega128 microcontroller.
 * RobotRxPWMControl.asm
 
 <a name="comparch"></a>
-## ATmega128
+## COMP_ARCH
 
-Contains AVR Assembly code for the ATmega128 microcontroller.
+Contains Computer Architecture related projects
 #### Projects:
 * simba_presentation
 * 3bit_branch_predictor_with_benchmarking
