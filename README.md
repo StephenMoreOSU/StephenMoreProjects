@@ -27,7 +27,7 @@ Contains AVR Assembly code for the ATmega128 microcontroller.
 * RobotRxPWMControl.asm
 
 <a name="comparch"></a>
-## COMP_ARCH
+## comp_arch
 
 Contains Computer Architecture related projects
 #### Projects:
@@ -56,13 +56,13 @@ Contains project directories for matlab projects
 * Coin_Image_Processing
 
 <a name="python"></a>
-## PYTHON
+## python
 Contains project directories for python projects
 #### Projects:
 * gfr_cone_editor_gui
 
 <a name="bash"></a>
-## BASH
+## bash
 Contains project directories for bash shell scripts
 #### Projects:
 * compile_simulate_synthesize_sverilog
