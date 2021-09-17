@@ -1,0 +1,58 @@
+# vsim tb -novopt -c -coverage -do "cover.do" 
+# Start time: 21:02:24 on May 27,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  ModelSim SE-64 10.5 Feb 12 2016 Linux 3.10.0-1062.9.1.el7.x86_64
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk7/work.tb
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk7/work.tb_sv_unit
+# Loading sv_std.std
+# Loading work.tb_sv_unit
+# Loading work.tb
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk7/work.gcd
+# Loading work.gcd
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk7/work.gcd_ctrl
+# Loading work.gcd_ctrl
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# do cover.do
+# INPUT FROM "input_data" ASCII FILE
+# a_in=      3430	b_in=      2060	result=        10
+# a_in=      3435	b_in=   2342340	result=        15
+# a_in=     13435	b_in=   3434290	result=         5
+# a_in=  23232502	b_in= 343535354	result=         2
+# a_in=      5975	b_in=   3859034	result=         1
+# a_in=      1930	b_in=        34	result=         2
+# a_in=        39	b_in=        13	result=        13
+# a_in=         9	b_in=         3	result=         3
+# a_in=        14	b_in=        92	result=         2
+# a_in=       210	b_in=       124	result=         2
+# a_in=     25000	b_in=     30000	result=      5000
+# a_in=      7500	b_in=     15000	result=      7500
+# a_in=      7500	b_in=     15000	result=      7500
+# RANDOMIZED INPUTS
+# a_in=       132	b_in=       368	result=         4
+# a_in=       167	b_in=       333	result=         1
+# a_in=       490	b_in=        10	result=        10
+# a_in=        38	b_in=       462	result=         2
+# a_in=       291	b_in=       209	result=         1
+# a_in=       163	b_in=       337	result=         1
+# a_in=       431	b_in=        69	result=         1
+# a_in=       498	b_in=         2	result=         2
+# a_in=       406	b_in=        94	result=         2
+# a_in=       320	b_in=       180	result=        20
+# ** Note: $stop    : rtl_src/tb.sv(99)
+#    Time: 512200 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at rtl_src/tb.sv line 99
+# Stopped at rtl_src/tb.sv line 99
+# End time: 21:02:25 on May 27,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

@@ -1,0 +1,49 @@
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : full_adder
+Version: L-2016.03-SP2
+Date   : Tue Apr 14 19:06:26 2020
+****************************************
+
+Operating Conditions: nom_pvt   Library: gtech
+Wire Load Model Mode: top
+
+  Startpoint: a_in[7] (input port)
+  Endpoint: sum[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  a_in[7] (in)                                            0.00       0.00 r
+  add_9/A_7 (*ADD_UNS_OP_8_8_8)                           0.00       0.00 r
+  add_9/*cell*3/A[7] (DW01_add_width8)                    0.00       0.00 r
+  ...
+  add_9/*cell*3/SUM[7] (DW01_add_width8)                  0.00       0.00 r
+  add_9/Z_7 (*ADD_UNS_OP_8_8_8)                           0.00       0.00 r
+  add_9_2/A_7 (*ADD_UNS_OP_8_1_8)                         0.00       0.00 r
+  add_9_2/*cell*6/A[7] (DW01_add_width8)                  0.00       0.00 r
+  ...
+  add_9_2/*cell*6/SUM[7] (DW01_add_width8)                0.00       0.00 r
+  add_9_2/Z_7 (*ADD_UNS_OP_8_1_8)                         0.00       0.00 r
+  sum[7] (out)                                            0.00       0.00 r
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

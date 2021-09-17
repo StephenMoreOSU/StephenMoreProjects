@@ -1,0 +1,25 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /tb_sv_unit/cg_out                                50.0%        100    Uncovered            
+    covered/total bins:                                     1          2                      
+    missing/total bins:                                     1          2                      
+    % Hit:                                              50.0%        100                      
+    Coverpoint cg_out::cp_sr                            50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+ Covergroup instance \/tb/cgi_out                       50.0%        100    Uncovered            
+    covered/total bins:                                     1          2                      
+    missing/total bins:                                     1          2                      
+    % Hit:                                              50.0%        100                      
+    Coverpoint cp_sr                                    50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+        bin auto[0]                                        12          1    Covered              
+        bin auto[1]                                         0          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 50.0%  COVERGROUP TYPES: 1

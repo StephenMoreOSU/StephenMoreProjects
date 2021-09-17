@@ -1,0 +1,37 @@
+SBY 23:50:41 [gcd] Removing directory 'gcd'.
+SBY 23:50:41 [gcd] Copy 'gcd.sv' to 'gcd/src/gcd.sv'.
+SBY 23:50:41 [gcd] Copy 'gcd_ctrl.sv' to 'gcd/src/gcd_ctrl.sv'.
+SBY 23:50:41 [gcd] engine_0: smtbmc
+SBY 23:50:41 [gcd] base: starting process "cd gcd/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 23:50:41 [gcd] base: finished (returncode=0)
+SBY 23:50:41 [gcd] smt2: starting process "cd gcd/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 23:50:41 [gcd] smt2: finished (returncode=0)
+SBY 23:50:41 [gcd] engine_0: starting process "cd gcd; yosys-smtbmc --presat --unroll --noprogress -t 10 --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Solver: yices
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 23:50:41 [gcd] engine_0: ##   0:00:00  Status: passed
+SBY 23:50:41 [gcd] engine_0: finished (returncode=0)
+SBY 23:50:41 [gcd] engine_0: Status returned by engine: pass
+SBY 23:50:41 [gcd] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:50:41 [gcd] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:50:41 [gcd] summary: engine_0 (smtbmc) returned pass
+SBY 23:50:41 [gcd] DONE (PASS, rc=0)

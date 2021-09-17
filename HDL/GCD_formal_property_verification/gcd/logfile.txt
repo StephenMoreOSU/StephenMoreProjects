@@ -1,0 +1,3 @@
+SBY  0:47:16 [gcd] Removing directory 'gcd'.
+SBY  0:47:16 [gcd] ERROR: sby file syntax error: [task]
+SBY  0:47:16 [gcd] DONE (ERROR, rc=16)

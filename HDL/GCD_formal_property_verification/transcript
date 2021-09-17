@@ -1,0 +1,46 @@
+# vsim tb -c -coverage -do "cover.do" 
+# Start time: 00:33:39 on Jun 04,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  ModelSim SE-64 10.5 Feb 12 2016 Linux 3.10.0-1062.9.1.el7.x86_64
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.gcd(fast)
+# Loading work.gcd_ctrl(fast)
+# ** Warning: (vsim-PLI-3691) src/tb.sv(60): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: src/tb.sv
+# do cover.do
+#  --- Reading from file ---
+# a_in=      8000   b_in=      8000   result=      8000
+# a_in=      8001   b_in=      8001   result=      8001
+# a_in=      7000   b_in=      7000   result=      7000
+# a_in=      7000   b_in=      7000   result=      7000
+# Generating random inputs
+# Rand a_in = -1690596058, b_in =  1690596558, sum=        500
+# Rand a_in =  -213365960, b_in =   213366460, sum=        500
+# Rand a_in =  -292705754, b_in =   292706254, sum=        500
+# Rand a_in = -2057733214, b_in =  2057733714, sum=        500
+# Rand a_in = -1911682697, b_in =  1911683197, sum=        500
+# Rand a_in = -1939637870, b_in =  1939638370, sum=        500
+# Rand a_in =  -810464016, b_in =   810464516, sum=        500
+# Rand a_in = -1670372086, b_in =  1670372586, sum=        500
+# Rand a_in =   -64671433, b_in =    64671933, sum=        500
+# Rand a_in = -1961840276, b_in =  1961840776, sum=        500
+# ** Note: $stop    : src/tb.sv(121)
+#    Time: 242400 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at src/tb.sv line 121
+# Stopped at src/tb.sv line 121
+# End time: 00:33:41 on Jun 04,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1

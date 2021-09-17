@@ -1,0 +1,136 @@
+# vsim tb -c -coverage -fsmdebug -do "cover.do" 
+# Start time: 23:49:00 on May 22,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  ModelSim SE-64 10.5 Feb 12 2016 Linux 3.10.0-1062.9.1.el7.x86_64
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.gcd(fast)
+# Loading work.gcd_ctrl(fast)
+# do cover.do
+# INPUT FROM "input_data" ASCII FILE
+# a_in=         1	b_in=         1	result=         1
+# a_in=         1	b_in=         1	result=         1
+# RANDOMIZED INPUTS
+# a_in=    314104	b_in=    451066	result=        14
+# a_in=    354973	b_in=    509387	result=         1
+# a_in=    908965	b_in=    601621	result=         1
+# a_in=    492810	b_in=    499615	result=         5
+# a_in=    489577	b_in=    150663	result=         1
+# a_in=    531522	b_in=    220840	result=         2
+# a_in=    880318	b_in=     92788	result=         2
+# a_in=    289749	b_in=     13326	result=         3
+# a_in=    445625	b_in=    728692	result=         1
+# a_in=   1001917	b_in=    813822	result=         1
+# a_in=    780304	b_in=    896927	result=         1
+# a_in=    259097	b_in=   1041564	result=         1
+# a_in=    581230	b_in=    602917	result=         1
+# a_in=    471700	b_in=    521829	result=         1
+# a_in=    889563	b_in=    416436	result=         3
+# a_in=    925560	b_in=    935726	result=         2
+# a_in=    353585	b_in=    256552	result=         1
+# a_in=    304728	b_in=    742113	result=         3
+# a_in=    129096	b_in=    468140	result=         4
+# a_in=    873131	b_in=    702373	result=         7
+# a_in=    914741	b_in=    675450	result=        79
+# a_in=    557147	b_in=    275156	result=         1
+# a_in=    277445	b_in=    909230	result=        35
+# a_in=    457956	b_in=    554981	result=         1
+# a_in=    573050	b_in=    803326	result=         2
+# a_in=    122083	b_in=    497686	result=         1
+# a_in=    719626	b_in=    516323	result=         1
+# a_in=    800945	b_in=    148761	result=         1
+# a_in=    631623	b_in=    967148	result=         1
+# a_in=    305382	b_in=    899680	result=         2
+# a_in=    154437	b_in=     92853	result=         3
+# a_in=    167576	b_in=    421411	result=         1
+# a_in=    597566	b_in=    317515	result=         1
+# a_in=    295254	b_in=    148265	result=         1
+# a_in=    555907	b_in=    799705	result=         1
+# a_in=    793631	b_in=    379120	result=         1
+# a_in=    927370	b_in=    621658	result=         2
+# a_in=    358100	b_in=    457395	result=         5
+# a_in=   1013407	b_in=     67473	result=         1
+# a_in=    663837	b_in=    197419	result=         1
+# a_in=    964878	b_in=    374420	result=         2
+# a_in=    945151	b_in=    297572	result=         1
+# a_in=    982424	b_in=    589561	result=         1
+# a_in=    807793	b_in=    821424	result=         1
+# a_in=    324929	b_in=    614727	result=         1
+# a_in=    334585	b_in=    284943	result=         1
+# a_in=    156078	b_in=    476399	result=        23
+# a_in=    521886	b_in=    775709	result=         1
+# a_in=    764519	b_in=    959608	result=         1
+# a_in=     73301	b_in=    447013	result=         1
+# a_in=    914396	b_in=    645705	result=         1
+# a_in=    811280	b_in=    992951	result=         1
+# a_in=    840962	b_in=    969016	result=         2
+# a_in=    140774	b_in=    245145	result=        59
+# a_in=    428559	b_in=    858794	result=         1
+# a_in=    482204	b_in=    162986	result=         2
+# a_in=    513521	b_in=    912441	result=         1
+# a_in=    344355	b_in=    293991	result=         3
+# a_in=    147606	b_in=    313781	result=         1
+# a_in=   1005759	b_in=    827669	result=         1
+# a_in=    886573	b_in=    245759	result=         1
+# a_in=    484907	b_in=    908015	result=         1
+# a_in=    792998	b_in=    930587	result=         1
+# a_in=    574659	b_in=    598569	result=         3
+# a_in=    933388	b_in=    789092	result=         4
+# a_in=    798033	b_in=    208592	result=         1
+# a_in=    940146	b_in=    214430	result=         2
+# a_in=    316557	b_in=    360895	result=         1
+# a_in=    859664	b_in=    218443	result=         1
+# a_in=    575199	b_in=    634737	result=         3
+# a_in=    984582	b_in=    423826	result=         2
+# a_in=    626000	b_in=    610916	result=         4
+# a_in=    102216	b_in=   1003910	result=         2
+# a_in=    296594	b_in=    729949	result=         1
+# a_in=    608521	b_in=     63697	result=         1
+# a_in=    230339	b_in=    125384	result=         1
+# a_in=    857822	b_in=    399625	result=         1
+# a_in=    783836	b_in=    994910	result=         2
+# a_in=   1009851	b_in=    279158	result=         1
+# a_in=    860027	b_in=    988517	result=         1
+# a_in=    894450	b_in=    198578	result=         2
+# a_in=    298048	b_in=    117076	result=         4
+# a_in=    827484	b_in=    925117	result=         1
+# a_in=    379389	b_in=    957522	result=         3
+# a_in=    924266	b_in=    850676	result=         2
+# a_in=    239017	b_in=    241823	result=         1
+# a_in=     60628	b_in=    644881	result=         1
+# a_in=    849422	b_in=    501264	result=         2
+# a_in=    706058	b_in=    470312	result=         2
+# a_in=    997423	b_in=    249198	result=         1
+# a_in=    346313	b_in=    778546	result=         1
+# a_in=    601495	b_in=    228165	result=         5
+# a_in=    313243	b_in=    524237	result=         7
+# a_in=    804506	b_in=    198836	result=         2
+# a_in=    832533	b_in=    564603	result=        39
+# a_in=    285125	b_in=   1039552	result=         1
+# a_in=    213506	b_in=    103103	result=         1
+# a_in=    703621	b_in=    765677	result=         1
+# a_in=    336471	b_in=    814133	result=         1
+# a_in=    372350	b_in=    294633	result=         1
+# INPUT FROM "input_data" ASCII FILE
+# COMPARING GCD RESULTS WITH SOFTWARE
+# a_in=         1	b_in=         1	result=         1
+# a_in=         1	b_in=         1	result=         1
+# ** Note: $stop    : rtl_src/tb.sv(127)
+#    Time: 1764600 ns  Iteration: 0  Instance: /tb
+# Break at rtl_src/tb.sv line 127
+# Stopped at rtl_src/tb.sv line 127
+# End time: 23:49:01 on May 22,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

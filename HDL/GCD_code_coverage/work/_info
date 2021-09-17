@@ -1,0 +1,168 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/nfs/stak/users/mores/ECE_474/hmk6
+T_opt
+!s110 1590123815
+Vg2WY=h=PjJL:N1>8YCS9h3
+04 2 4 work tb fast 0
+=1-14feb5d110e3-5ec75d27-1ce61-337d
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+R0
+Xbus_sv_unit
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z3 !s110 1590087995
+!i10b 1
+!s100 UcS=RKG9I1lbRYmiF2bHM1
+I74k?Ola3LX>RZc9_Co`WP0
+V74k?Ola3LX>RZc9_Co`WP0
+!i103 1
+S1
+R0
+Z4 w1590087986
+Z5 8rtl_src/bus.sv
+Z6 Frtl_src/bus.sv
+L0 1
+Z7 OL;L;10.5;63
+r1
+!s85 0
+31
+Z8 !s108 1590087995.000000
+Z9 !s107 rtl_src/tb.sv|rtl_src/gcd.sv|rtl_src/gcd_ctrl.sv|rtl_src/covergroups.sv|rtl_src/bus.sv|
+Z10 !s90 rtl_src/bus.sv|rtl_src/covergroups.sv|rtl_src/gcd_ctrl.sv|rtl_src/gcd.sv|rtl_src/tb.sv|
+!i113 0
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xcovergroups_sv_unit
+R2
+R3
+!i10b 1
+!s100 6<RO@UCU?F`bk8W^GGLGo1
+IYf_?[^mk8nCgGBgM8`[>03
+VYf_?[^mk8nCgGBgM8`[>03
+!i103 1
+S1
+R0
+R4
+R5
+R6
+8rtl_src/covergroups.sv
+Frtl_src/covergroups.sv
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vgcd
+R2
+Z12 !s110 1590216536
+!i10b 1
+!s100 iVWKBg=]CMoN:C7S=c1@E3
+IIHPAGhVm@8;XG:YPOOnaP3
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+!s105 gcd_sv_unit
+S1
+R0
+w1590082308
+8rtl_src/gcd.sv
+Frtl_src/gcd.sv
+L0 1
+R7
+r1
+!s85 0
+31
+Z14 !s108 1590216536.000000
+Z15 !s107 rtl_src/gcd.sv|rtl_src/gcd_ctrl.sv|
+Z16 !s90 rtl_src/gcd_ctrl.sv|rtl_src/gcd.sv|-cover|sbcef|+cover=f|+acc=f|
+!i113 0
+Z17 !s102 -cover sbcef +cover=f
+Z18 o-cover sbcef +cover=f +acc=f -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vgcd_ctrl
+R2
+R12
+!i10b 1
+!s100 [oU`o1Lgf2J4bLMe]PY=k3
+IL[h1DX7454^LDe`ld;aIW0
+R13
+!s105 gcd_ctrl_sv_unit
+S1
+R0
+w1590082310
+8rtl_src/gcd_ctrl.sv
+Frtl_src/gcd_ctrl.sv
+L0 1
+R7
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R1
+vtb
+R2
+DXx4 work 10 tb_sv_unit 0 22 i7Sc@b^NaY8RfQBf;848j0
+R13
+r1
+!s85 0
+31
+!i10b 1
+!s100 e[3Zc8?8NYSUHmmCc1ElZ3
+I=FM`=3YDINMC:U^0]D4_F1
+!s105 tb_sv_unit
+S1
+R0
+Z19 w1590123806
+Z20 8rtl_src/tb.sv
+Z21 Frtl_src/tb.sv
+L0 4
+R7
+Z22 !s108 1590216535.000000
+Z23 !s107 rtl_src/rng.sv|rtl_src/tb.sv|
+Z24 !s90 rtl_src/tb.sv|
+!i113 0
+R11
+R1
+Xtb_sv_unit
+R2
+Vi7Sc@b^NaY8RfQBf;848j0
+r1
+!s85 0
+31
+!i10b 1
+!s100 WQBHAaZjGWZGCaKnL7jEz3
+Ii7Sc@b^NaY8RfQBf;848j0
+!i103 1
+S1
+R0
+R19
+R20
+R21
+Frtl_src/rng.sv
+L0 1
+R7
+R22
+R23
+R24
+!i113 0
+R11
+R1

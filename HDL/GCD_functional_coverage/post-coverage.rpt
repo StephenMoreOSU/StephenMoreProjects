@@ -1,0 +1,279 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: rtl_src/gcd.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           15        15         0     100.0
+
+================================Statement Details================================
+
+Statement Coverage for file rtl_src/gcd.sv --
+
+    1                                                module gcd(	input [31:0] a_in,          //operand a
+    2                                                			input [31:0] b_in,          //operand b
+    3                                                			input start,                //validates the input data
+    4                                                			input reset_n,              //reset
+    5                                                			input clk,                  //clock
+    6                                                			output reg [31:0] result,  //output of GCD engine
+    7                                                			output reg done);          //validates output value
+    8                                                
+    9                                                	logic			registers_equal		;
+    10                                               	logic			register_a_smaller	;
+    11                                               	logic			swap_registers		;
+    12                                               	logic			subtract_registers	;
+    13                                               	logic			done_flag			;
+    14                                               	logic	[31:0]	register_b			;
+    15                                               
+    16                                               	//register_b
+    17              1                       2319     	always_ff @(posedge clk, negedge reset_n) begin
+    18              1                          2     		if (~reset_n)					register_b <= 0;
+    19              1                         14     		else if (start)					register_b <= b_in;
+    20              1                         60     		else if (swap_registers)		register_b <= result;
+    21                                               	end
+    22                                               
+    23                                               	//result
+    24              1                       4428     	always_ff @(posedge clk, negedge reset_n) begin
+    25              1                          2     		if (~reset_n)					result <= 0;
+    26              1                         14     		else if (start)					result <= a_in;
+    27              1                         60     		else if (swap_registers)		result <= register_b;
+    28              1                       2174     		else if (subtract_registers)	result <= result - register_b;
+    29                                               	end
+    30                                               
+    31                                               	//done
+    32              1                         31     	always_ff @(posedge clk, negedge reset_n) begin
+    33              1                          2     		if (~reset_n)					done <= 0;
+    34              1                         14     		else if (done_flag)				done <= 1;
+    35              1                         15     		else							done <= 0;
+    36                                               	end
+    37                                               
+    38              1                       2249     	assign registers_equal		= (result == register_b);
+    39              1                       2249     	assign register_a_smaller	= (result < register_b);
+    40                                               
+    41                                               	gcd_ctrl gcd_ctrl_0(
+    42                                               		.start					,
+    43                                               		.reset_n				,
+    44                                               		.clk					,
+    45                                               		.registers_equal		,
+    46                                               		.register_a_smaller		,
+    47                                               		.swap_registers			,
+    48                                               		.subtract_registers		,
+    49                                               		.done_flag				);
+    50                                               	
+    51                                               endmodule
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                        12        12         0     100.0
+
+================================Branch Details================================
+
+Branch Coverage for file rtl_src/gcd.sv --
+
+------------------------------------IF Branch------------------------------------
+    18                                      2319     Count coming in to IF
+    18              1                          2     		if (~reset_n)					register_b <= 0;
+    19              1                         14     		else if (start)					register_b <= b_in;
+    20              1                         60     		else if (swap_registers)		register_b <= result;
+                                            2243     All False Count
+Branch totals: 4 hits of 4 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    25                                      4428     Count coming in to IF
+    25              1                          2     		if (~reset_n)					result <= 0;
+    26              1                         14     		else if (start)					result <= a_in;
+    27              1                         60     		else if (swap_registers)		result <= register_b;
+    28              1                       2174     		else if (subtract_registers)	result <= result - register_b;
+                                            2178     All False Count
+Branch totals: 5 hits of 5 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    33                                        31     Count coming in to IF
+    33              1                          2     		if (~reset_n)					done <= 0;
+    34              1                         14     		else if (done_flag)				done <= 1;
+    35              1                         15     		else							done <= 0;
+Branch totals: 3 hits of 3 branches = 100.0%
+
+
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+Expression Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Expression Terms             0         0         0     100.0
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+
+=================================================================================
+=== File: rtl_src/gcd_ctrl.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           14        14         0     100.0
+
+================================Statement Details================================
+
+Statement Coverage for file rtl_src/gcd_ctrl.sv --
+
+    1                                                module gcd_ctrl
+    2                                                	(input start				,
+    3                                                	input reset_n				,
+    4                                                	input clk					,
+    5                                                	input registers_equal		,
+    6                                                	input register_a_smaller	,
+    7                                                	output swap_registers		,
+    8                                                	output subtract_registers	,
+    9                                                	output done_flag			);
+    10                                               
+    11                                               	enum logic [1:0] {
+    12                                               		TEST = 2'h0,
+    13                                               		SWAP = 2'h1,
+    14                                               		SUBT = 2'h2,
+    15                                               		DONE = 2'h3
+    16                                               	} ps, ns;
+    17                                               
+    18                                               	//ps
+    19              1                       4453     	always_ff @(posedge clk, negedge reset_n) begin
+    20              1                          2     		if (~reset_n)			ps <= DONE;
+    21              1                       4451     		else					ps <= ns;
+    22                                               	end
+    23                                               
+    24              1                       4467     	always_comb
+    25                                               		case (ps)
+    26              1                         14     			DONE:	if (start)						ns = TEST;
+    27              1                         15     					else							ns = DONE;
+    28              1                         17     			TEST:	if (registers_equal)			ns = DONE;
+    29              1                         66     					else if (register_a_smaller)	ns = SWAP;
+    30              1                       2119     					else 							ns = SUBT;
+    31              1                         60     			SWAP:									ns = SUBT;
+    32              1                       2174     			SUBT:									ns = TEST;
+    33                                               		endcase
+    34                                               
+    35              1                       4438     	assign swap_registers		= (ns == SWAP);
+    36              1                       4438     	assign subtract_registers	= (ns == SUBT);
+    37              1                       8875     	assign done_flag			= (ns == DONE && ps == TEST);
+    38                                               
+    39                                               endmodule
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                        12        12         0     100.0
+
+================================Branch Details================================
+
+Branch Coverage for file rtl_src/gcd_ctrl.sv --
+
+------------------------------------IF Branch------------------------------------
+    20                                      4453     Count coming in to IF
+    20              1                          2     		if (~reset_n)			ps <= DONE;
+    21              1                       4451     		else					ps <= ns;
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------CASE Branch------------------------------------
+    25                                      4467     Count coming in to CASE
+    26              1                         29     			DONE:	if (start)						ns = TEST;
+    28              1                       2202     			TEST:	if (registers_equal)			ns = DONE;
+    31              1                         60     			SWAP:									ns = SUBT;
+    32              1                       2174     			SUBT:									ns = TEST;
+                                               2     All False Count
+Branch totals: 5 hits of 5 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    26                                        29     Count coming in to IF
+    26              2                         14     			DONE:	if (start)						ns = TEST;
+    27              1                         15     					else							ns = DONE;
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    28                                      2202     Count coming in to IF
+    28              2                         17     			TEST:	if (registers_equal)			ns = DONE;
+    29              1                         66     					else if (register_a_smaller)	ns = SWAP;
+    30              1                       2119     					else 							ns = SUBT;
+Branch totals: 3 hits of 3 branches = 100.0%
+
+
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+Expression Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Expression Terms             2         2         0     100.0
+
+================================Expression Details================================
+
+Expression Coverage for file rtl_src/gcd_ctrl.sv --
+
+----------------Focused Expression View-----------------
+Line       37 Item    1  ((ns == DONE) && (ps == TEST))
+Expression totals: 2 of 2 input terms covered = 100.0%
+
+
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                        87.5
+        States                       4         4         0     100.0
+        Transitions                  8         6         2      75.0
+
+================================FSM Details================================
+
+FSM Coverage for file rtl_src/gcd_ctrl.sv --
+
+FSM_ID: ps
+    Current State Object : ps
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  26                DONE                   3
+  28                TEST                   0
+  32                SUBT                   2
+  31                SWAP                   1
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                    DONE                  31
+                    TEST                2188
+                    SUBT                2174
+                    SWAP                  60
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  26                   0                  14          DONE -> TEST        
+  30                   1                2114          TEST -> SUBT        
+  29                   2                  60          TEST -> SWAP        
+  28                   3                  14          TEST -> DONE        
+  32                   4                2174          SUBT -> TEST        
+  31                   6                  60          SWAP -> SUBT        
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  20                   5          SUBT -> DONE        
+  20                   7          SWAP -> DONE        
+
+
+    Summary                     Active      Hits    Misses % Covered
+    -------                     ------      ----    ------ ---------
+        States                       4         4         0     100.0
+        Transitions                  8         6         2      75.0
+
+
+Total Coverage By File (code coverage only, filtered view): 96.8%
+

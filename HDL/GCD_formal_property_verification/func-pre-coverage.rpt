@@ -1,0 +1,369 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: src/gcd.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           16        16         0     100.0
+
+================================Statement Details================================
+
+Statement Coverage for file src/gcd.sv --
+
+    1                                                module gcd(	input [31:0] a_in,          //operand a
+    2                                                			input [31:0] b_in,          //operand b
+    3                                                			input start,                //validates the input data
+    4                                                			input reset_n,              //reset
+    5                                                			input clk,                  //clock
+    6                                                			input clck,                 //slower clock  			
+    7                                                			output reg [31:0] result,  //output of GCD engine
+    8                                                			output reg done);          //validates output value
+    9                                                
+    10                                               	logic			registers_equal		;
+    11                                               	logic			register_a_smaller	;
+    12                                               	logic			swap_registers		;
+    13                                               	logic			subtract_registers	;
+    14                                               	logic			done_flag			;
+    15                                               	logic			[31:0]	register_b			;
+    16                                               	logic 			register_b_equal;
+    17                                               
+    18                                               	//register_b
+    19              1                       1425     	always_ff @(posedge clck, negedge reset_n) begin
+    20              1                          6     		if (~reset_n)					register_b <= 0;
+    21              1                         14     		else if (start)					register_b <= b_in;
+    22              1                        133     		else if (swap_registers)		register_b <= result;
+    23                                               	end
+    24                                               
+    25                                               	//result
+    26                                               	//result resets when reset is asserted (on nedege reset_n)
+    27              1                       2409     	always_ff @(posedge clk, negedge reset_n) begin 
+    28              1                          6     		if (~reset_n)					result <= 0;
+    29              1                         14     		else if (start) result <= a_in;
+    30              1                        133     		else if (swap_registers)		result <= register_b;
+    31              1                       1126     		else if (subtract_registers)	result <= result - register_b;
+    32                                               	end
+    33                                               
+    34                                               	//done
+    35              1                         32     	always_ff @(posedge clk, negedge reset_n) begin
+    36              1                          6     		if (~reset_n)					done <= 0;
+    37              1                         12     		else if (done_flag)				done <= 1;
+    38              1                         14     		else							done <= 0;
+    39                                               	end
+    40                                               
+    41              1                       1276     	assign registers_equal		= (result == register_b);
+    42              1                       1276     	assign register_a_smaller	= (result < register_b);
+    43              1                        163     	assign register_b_equal 	= (register_b == b_in);
+    44                                               
+    45                                               	gcd_ctrl gcd_ctrl_0(
+    46                                               		.start					,
+    47                                               		.reset_n				,
+    48                                               		.clk(clck)					,
+    49                                               		.registers_equal		,
+    50                                               		.register_a_smaller		,
+    51                                               		.swap_registers			,
+    52                                               		.subtract_registers		,
+    53                                               		.done_flag				);
+    54                                               
+    55                                               	`ifdef FORMAL
+    56                                               		//formal verification block
+    57                                               		always @(posedge clk) begin
+    58                                               			//assert((result == 0 && reset_n == 0) || (result != 0 && reset_n != 0));
+    59                                               			//if reset_n is asserted the result must be 0
+    60                                               			if(~reset_n)
+    61                                               				assert(result == 0);
+    62                                               		end
+    63                                               	`endif
+    64                                               
+    65                                               endmodule
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                        12        12         0     100.0
+
+================================Branch Details================================
+
+Branch Coverage for file src/gcd.sv --
+
+------------------------------------IF Branch------------------------------------
+    20                                      1425     Count coming in to IF
+    20              1                          6     		if (~reset_n)					register_b <= 0;
+    21              1                         14     		else if (start)					register_b <= b_in;
+    22              1                        133     		else if (swap_registers)		register_b <= result;
+                                            1272     All False Count
+Branch totals: 4 hits of 4 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    28                                      2409     Count coming in to IF
+    28              1                          6     		if (~reset_n)					result <= 0;
+    29              1                         14     		else if (start) result <= a_in;
+    30              1                        133     		else if (swap_registers)		result <= register_b;
+    31              1                       1126     		else if (subtract_registers)	result <= result - register_b;
+                                            1130     All False Count
+Branch totals: 5 hits of 5 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    36                                        32     Count coming in to IF
+    36              1                          6     		if (~reset_n)					done <= 0;
+    37              1                         12     		else if (done_flag)				done <= 1;
+    38              1                         14     		else							done <= 0;
+Branch totals: 3 hits of 3 branches = 100.0%
+
+
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+Expression Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Expression Terms             0         0         0     100.0
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+
+=================================================================================
+=== File: src/gcd_ctrl.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           14        14         0     100.0
+
+================================Statement Details================================
+
+Statement Coverage for file src/gcd_ctrl.sv --
+
+    1                                                module gcd_ctrl
+    2                                                	(input start				,
+    3                                                	input reset_n				,
+    4                                                	input clk					,
+    5                                                	input registers_equal		,
+    6                                                	input register_a_smaller	,
+    7                                                	output swap_registers		,
+    8                                                	output subtract_registers	,
+    9                                                	output done_flag			);
+    10                                               
+    11                                               	enum logic [1:0] {
+    12                                               		TEST = 2'h0,
+    13                                               		SWAP = 2'h1,
+    14                                               		SUBT = 2'h2,
+    15                                               		DONE = 2'h3
+    16                                               	} ps, ns;
+    17                                               
+    18                                                
+    19                                               	//ps
+    20              1                       2421     	always_ff @(posedge clk, negedge reset_n) begin
+    21              1                          6     		if (~reset_n)			ps <= DONE;
+    22              1                       2415     		else					ps <= ns;
+    23                                               	end
+    24                                               
+    25              1                       2443     	always_comb
+    26                                               		case (ps)
+    27              1                         14     			DONE:	if (start)						ns = TEST;
+    28              1                         15     					else							ns = DONE;
+    29              1                         16     			TEST:	if (registers_equal)			ns = DONE;
+    30              1                        133     					else if (register_a_smaller)	ns = SWAP;
+    31              1                       1004     					else 							ns = SUBT;
+    32              1                        133     			SWAP:									ns = SUBT;
+    33              1                       1126     			SUBT:									ns = TEST;
+    34                                               		endcase
+    35                                               
+    36              1                       2416     	assign swap_registers		= (ns == SWAP);
+    37              1                       2416     	assign subtract_registers	= (ns == SUBT);
+    38              1                       4829     	assign done_flag			= (ns == DONE && ps == TEST);
+    39                                               
+    40                                               endmodule
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                        12        12         0     100.0
+
+================================Branch Details================================
+
+Branch Coverage for file src/gcd_ctrl.sv --
+
+------------------------------------IF Branch------------------------------------
+    21                                      2421     Count coming in to IF
+    21              1                          6     		if (~reset_n)			ps <= DONE;
+    22              1                       2415     		else					ps <= ns;
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------CASE Branch------------------------------------
+    26                                      2443     Count coming in to CASE
+    27              1                         29     			DONE:	if (start)						ns = TEST;
+    29              1                       1153     			TEST:	if (registers_equal)			ns = DONE;
+    32              1                        133     			SWAP:									ns = SUBT;
+    33              1                       1126     			SUBT:									ns = TEST;
+                                               2     All False Count
+Branch totals: 5 hits of 5 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    27                                        29     Count coming in to IF
+    27              2                         14     			DONE:	if (start)						ns = TEST;
+    28              1                         15     					else							ns = DONE;
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    29                                      1153     Count coming in to IF
+    29              2                         16     			TEST:	if (registers_equal)			ns = DONE;
+    30              1                        133     					else if (register_a_smaller)	ns = SWAP;
+    31              1                       1004     					else 							ns = SUBT;
+Branch totals: 3 hits of 3 branches = 100.0%
+
+
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+Expression Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Expression Terms             2         2         0     100.0
+
+================================Expression Details================================
+
+Expression Coverage for file src/gcd_ctrl.sv --
+
+----------------Focused Expression View-----------------
+Line       38 Item    1  ((ns == DONE) && (ps == TEST))
+Expression totals: 2 of 2 input terms covered = 100.0%
+
+
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       4         4         0     100.0
+        Transitions                  8         8         0     100.0
+
+================================FSM Details================================
+
+FSM Coverage for file src/gcd_ctrl.sv --
+
+FSM_ID: ps
+    Current State Object : ps
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  27                DONE                   3
+  29                TEST                   0
+  33                SUBT                   2
+  32                SWAP                   1
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                    DONE                  23
+                    TEST                1139
+                    SUBT                1126
+                    SWAP                 133
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  27                   0                  14          DONE -> TEST        
+  31                   1                 994          TEST -> SUBT        
+  30                   2                 133          TEST -> SWAP        
+  29                   3                  12          TEST -> DONE        
+  33                   4                1125          SUBT -> TEST        
+  21                   5                   1          SUBT -> DONE        
+  32                   6                 132          SWAP -> SUBT        
+  21                   7                   1          SWAP -> DONE        
+
+
+    Summary                     Active      Hits    Misses % Covered
+    -------                     ------      ----    ------ ---------
+        States                       4         4         0     100.0
+        Transitions                  8         8         0     100.0
+
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /tb_sv_unit/cg_fsm                               100.0%        100    Covered              
+    covered/total bins:                                     8          8                      
+    missing/total bins:                                     0          8                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cg_fsm::cp_ps                           100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg_fsm::cp_ns                           100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+ Covergroup instance \/tb/cgi_fsm                      100.0%        100    Covered              
+    covered/total bins:                                     8          8                      
+    missing/total bins:                                     0          8                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cp_ps                                   100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        bin auto[TEST]                                   1139          1    Covered              
+        bin auto[SWAP]                                    132          1    Covered              
+        bin auto[SUBT]                                   1125          1    Covered              
+        bin auto[DONE]                                     28          1    Covered              
+    Coverpoint cp_ns                                   100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        bin auto[TEST]                                   1139          1    Covered              
+        bin auto[SWAP]                                    133          1    Covered              
+        bin auto[SUBT]                                   1126          1    Covered              
+        bin auto[DONE]                                     26          1    Covered              
+ TYPE /tb_sv_unit/cg_result                            100.0%        100    Covered              
+    covered/total bins:                                     3          3                      
+    missing/total bins:                                     0          3                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cg_result::cp_result                    100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+ Covergroup instance \/tb/cgi_result                   100.0%        100    Covered              
+    covered/total bins:                                     3          3                      
+    missing/total bins:                                     0          3                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cp_result                               100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin tiny                                          555          1    Covered              
+        bin artisanal                                      94          1    Covered              
+        bin jumbo                                          16          1    Covered              
+ TYPE /tb_sv_unit/cg_fsmtrans                          100.0%        100    Covered              
+    covered/total bins:                                     4          4                      
+    missing/total bins:                                     0          4                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cg_fsmtrans::cp_b                       100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+ Covergroup instance \/tb/cgi_fsmtrans                 100.0%        100    Covered              
+    covered/total bins:                                     4          4                      
+    missing/total bins:                                     0          4                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cp_b                                    100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        illegal_bin bad_trans                               0               ZERO                 
+        bin auto[TEST]                                   1139          1    Covered              
+        bin auto[SWAP]                                    132          1    Covered              
+        bin auto[SUBT]                                   1125          1    Covered              
+        bin auto[DONE]                                     28          1    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.0%  COVERGROUP TYPES: 3
+
+Total Coverage By File (code coverage only, filtered view): 100.0%
+

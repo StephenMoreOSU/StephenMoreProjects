@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="0">
+<testsuite disabled="0" errors="1" failures="0" name="gcd" skipped="0" tests="1" time="0">
+<properties>
+<property name="os" value="posix"/>
+</properties>
+<testcase classname="gcd" name="default" status="ERROR" time="0">
+<error message="ERROR" type="ERROR"/>
+<system-out>SBY  0:47:16 [gcd] Removing directory 'gcd'.
+SBY  0:47:16 [gcd] ERROR: sby file syntax error: [task]
+SBY  0:47:16 [gcd] DONE (ERROR, rc=16)
+</system-out></testcase></testsuite></testsuites>

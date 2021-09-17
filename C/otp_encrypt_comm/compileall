@@ -1,0 +1,22 @@
+#!/bin/bash
+gcc -o otp_d otp_d.c
+if [ $? -eq 0 ]
+then
+    echo "SERVER otp_d.c successfully compiled!"
+else
+    echo "FAILURE to compile SERVER otp_d.c"
+fi
+gcc -o otp otp.c
+if [ $? -eq 0 ]
+then
+    echo "CLIENT otp.c successfully compiled!"
+else
+    echo "FAILURE to compile CLIENT otp.c"
+fi
+gcc -o keygen keygen.c
+if [ $? -eq 0 ]
+then
+    echo "KEYGEN keygen.c successfully compiled!"
+else
+    echo "FAILURE to compile KEYGEN keygen.c"
+fi

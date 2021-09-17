@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 10
+
+[engines]
+smtbmc
+
+[script]
+read -formal gcd.sv
+read -formal gcd_ctrl.sv
+prep -top gcd
+
+[files]
+gcd.sv
+gcd_ctrl.sv

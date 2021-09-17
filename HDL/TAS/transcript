@@ -1,0 +1,1552 @@
+# vsim tb -do "rtl_src/tas.do" -novopt -quiet -c 
+# Start time: 21:39:52 on May 17,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  ModelSim SE-64 10.5 Feb 12 2016 Linux 3.10.0-1062.9.1.el7.x86_64
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.tb
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.tas
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.tas_DW01_add_0
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.FADDX1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.XOR2X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.AND2X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.tas_DW01_add_1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.tas_DW01_add_2
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.NAND2X0
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.XNOR2X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.tas_DW01_add_3
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.LATCHX1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.s_latchx1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.DFFARX1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.DFFX1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.DFFASX1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.AO21X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.INVX0
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.NOR2X0
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.OAI21X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.OR2X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.AO22X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.NOR4X0
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.NAND3X0
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.NOR3X0
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.OR3X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.MUX21X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.AO221X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.NAND4X0
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.AND4X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.OA21X1
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.AND3X1
+# ** Warning: (vsim-3017) tasv2.gate.v(178): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/add_300_aco File: tasv2.gate.v
+# ** Warning: (vsim-3722) tasv2.gate.v(178): [TFMPC] - Missing connection for port 'CO'.
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.s_faddx1_S
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.s_faddx1_CO
+# ** Warning: (vsim-3017) tasv2.gate.v(181): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/add_288_aco File: tasv2.gate.v
+# ** Warning: (vsim-3722) tasv2.gate.v(181): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) tasv2.gate.v(184): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/add_274_aco File: tasv2.gate.v
+# ** Warning: (vsim-3722) tasv2.gate.v(184): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) tasv2.gate.v(187): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/add_260_aco File: tasv2.gate.v
+# ** Warning: (vsim-3722) tasv2.gate.v(187): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) tasv2.gate.v(190): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(190): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3017) tasv2.gate.v(192): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(192): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3017) tasv2.gate.v(196): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(196): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3017) tasv2.gate.v(198): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(198): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3017) tasv2.gate.v(202): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(202): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3017) tasv2.gate.v(204): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(204): [TFMPC] - Missing connection for port 'Q'.
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.s_dffarx1_Q
+# ** Warning: (vsim-3017) tasv2.gate.v(208): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_present_state_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(208): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3017) tasv2.gate.v(210): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/rx_buffer_bit_reg File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(210): [TFMPC] - Missing connection for port 'QN'.
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.s_dffx1_Q
+# ** Warning: (vsim-3017) tasv2.gate.v(211): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_second_order_buffer_reg[7]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(211): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(213): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_second_order_buffer_reg[6]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(213): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(215): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_second_order_buffer_reg[5]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(215): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(217): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_second_order_buffer_reg[4]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(217): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(219): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_second_order_buffer_reg[3]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(219): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(221): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_second_order_buffer_reg[2]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(221): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(223): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_second_order_buffer_reg[1]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(223): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(225): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_second_order_buffer_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(225): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(227): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/ready_to_write_middle_buff_reg File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(227): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(228): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/successfully_written_to_ram_reg File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(228): [TFMPC] - Missing connection for port 'QN'.
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.s_dffasx1_Q
+# ** Warning: (vsim-3017) tasv2.gate.v(232): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/average_written_to_ram_reg File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(232): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(234): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(234): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(235): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[5]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(235): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(236): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(236): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(237): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(237): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(238): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(238): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(239): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(239): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(240): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(240): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(241): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(241): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(242): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\n_bit_index_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(242): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(243): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\n_bit_index_reg[1]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(243): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(244): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\n_bit_index_reg[2]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(244): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(245): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/average_ready_to_write_reg File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(245): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(258): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_addr_reg[10]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(258): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(260): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_addr_reg[8]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(260): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(262): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_addr_reg[4]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(262): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(264): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_addr_reg[2]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(264): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(268): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_addr_reg[7]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(268): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(274): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_addr_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(274): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(276): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_addr_reg[9]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFASX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(276): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(278): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_byte_count_reg[1]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(278): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(283): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[10]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(283): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(286): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_bit_index_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(286): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(289): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[1]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(289): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(291): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[2]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(291): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(293): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[3]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(293): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(295): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[4]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(295): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(297): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[5]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(297): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(299): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[6]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(299): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(301): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[7]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(301): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(303): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(303): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(305): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[9]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(305): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(307): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\p_accumulator_reg[8]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(307): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(312): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\packet_avg_temp_reg[7]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(312): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(314): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\packet_avg_temp_reg[6]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(314): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(316): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\packet_avg_temp_reg[5]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(316): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(318): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\packet_avg_temp_reg[4]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(318): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(320): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\packet_avg_temp_reg[3]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(320): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(322): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\packet_avg_temp_reg[2]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(322): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(324): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\packet_avg_temp_reg[1]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(324): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(326): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\packet_avg_temp_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/DFFARX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(326): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(328): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/avg_computed_n_reg File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(328): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(330): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_data_reg[7]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(330): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(332): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_data_reg[6]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(332): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(334): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_data_reg[5]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(334): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(336): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_data_reg[4]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(336): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(338): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_data_reg[3]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(338): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(340): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_data_reg[2]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(340): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(342): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_data_reg[1]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(342): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) tasv2.gate.v(344): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/tas_0/\present_ram_data_reg[0]  File: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v
+# ** Warning: (vsim-3722) tasv2.gate.v(344): [TFMPC] - Missing connection for port 'QN'.
+# Refreshing /nfs/stak/users/mores/ECE_474/hmk5/work.s_mux21x1
+# do rtl_src/tas.do
+# ** Warning: (vsim-3533) [FOFIW] - Failed to open file "vectors/output_data" for writing.
+# No such file or directory. (errno = ENOENT)    : tb.sv(37)
+#    Time: 0 ps  Iteration: 0  Instance: /tb
+# ERROR : Cannot open file output_data
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:203 ps, negedge CLK:204 ps, 96 ps );
+#    Time: 204 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:203 ps, negedge CLK:205 ps, 96 ps );
+#    Time: 205 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:203 ps, negedge CLK:247 ps, 96 ps );
+#    Time: 247 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:203 ps, negedge CLK:247 ps, 96 ps );
+#    Time: 247 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:203 ps, negedge CLK:247 ps, 96 ps );
+#    Time: 247 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:203 ps, negedge CLK:247 ps, 96 ps );
+#    Time: 247 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:203 ps, negedge CLK:264 ps, 96 ps );
+#    Time: 264 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:203 ps, negedge CLK:269 ps, 96 ps );
+#    Time: 269 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:770202 ps, :770266 ps, 83 ps );
+#    Time: 770266 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:770251 ps, negedge CLK:770266 ps, 42 ps );
+#    Time: 770266 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:770205 ps, :770266 ps, 83 ps );
+#    Time: 770266 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:770251 ps, negedge CLK:770266 ps, 42 ps );
+#    Time: 770266 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:790265 ps, negedge CLK:790281 ps, 96 ps );
+#    Time: 790281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:830265 ps, negedge CLK:830281 ps, 96 ps );
+#    Time: 830281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:850208 ps, :850260 ps, 83 ps );
+#    Time: 850260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:850243 ps, :850290 ps, 83 ps );
+#    Time: 850290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:910251 ps, negedge CLK:910281 ps, 42 ps );
+#    Time: 910281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:930228 ps, negedge CLK:930230 ps, 96 ps );
+#    Time: 930230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 3a
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:970251 ps, negedge CLK:970281 ps, 42 ps );
+#    Time: 970281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:1010251 ps, negedge CLK:1010281 ps, 42 ps );
+#    Time: 1010281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:1030208 ps, :1030260 ps, 83 ps );
+#    Time: 1030260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:1030243 ps, :1030290 ps, 83 ps );
+#    Time: 1030290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1130209 ps, negedge CLK:1130266 ps, 96 ps );
+#    Time: 1130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1130209 ps, negedge CLK:1130266 ps, 96 ps );
+#    Time: 1130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1130209 ps, negedge CLK:1130266 ps, 96 ps );
+#    Time: 1130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1130209 ps, negedge CLK:1130266 ps, 96 ps );
+#    Time: 1130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1130209 ps, negedge CLK:1130266 ps, 96 ps );
+#    Time: 1130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1130209 ps, negedge CLK:1130266 ps, 96 ps );
+#    Time: 1130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 55
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1210265 ps, negedge CLK:1210281 ps, 96 ps );
+#    Time: 1210281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1250265 ps, negedge CLK:1250281 ps, 96 ps );
+#    Time: 1250281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:1270208 ps, :1270260 ps, 83 ps );
+#    Time: 1270260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:1270251 ps, negedge CLK:1270260 ps, 42 ps );
+#    Time: 1270260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:1270243 ps, :1270290 ps, 83 ps );
+#    Time: 1270290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:1270251 ps, negedge CLK:1270290 ps, 42 ps );
+#    Time: 1270290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1290265 ps, negedge CLK:1290303 ps, 96 ps );
+#    Time: 1290303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1330265 ps, negedge CLK:1330281 ps, 96 ps );
+#    Time: 1330281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1370209 ps, negedge CLK:1370266 ps, 96 ps );
+#    Time: 1370266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1370209 ps, negedge CLK:1370266 ps, 96 ps );
+#    Time: 1370266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1370209 ps, negedge CLK:1370266 ps, 96 ps );
+#    Time: 1370266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1370209 ps, negedge CLK:1370266 ps, 96 ps );
+#    Time: 1370266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1370209 ps, negedge CLK:1370266 ps, 96 ps );
+#    Time: 1370266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1370209 ps, negedge CLK:1370266 ps, 96 ps );
+#    Time: 1370266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 43
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:1510208 ps, :1510260 ps, 83 ps );
+#    Time: 1510260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:1510243 ps, :1510290 ps, 83 ps );
+#    Time: 1510290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1570265 ps, negedge CLK:1570281 ps, 96 ps );
+#    Time: 1570281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1610209 ps, negedge CLK:1610266 ps, 96 ps );
+#    Time: 1610266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1610209 ps, negedge CLK:1610266 ps, 96 ps );
+#    Time: 1610266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1610209 ps, negedge CLK:1610266 ps, 96 ps );
+#    Time: 1610266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 3c
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:1750208 ps, :1750260 ps, 83 ps );
+#    Time: 1750260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:1750243 ps, :1750290 ps, 83 ps );
+#    Time: 1750290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1850209 ps, negedge CLK:1850266 ps, 96 ps );
+#    Time: 1850266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1850209 ps, negedge CLK:1850266 ps, 96 ps );
+#    Time: 1850266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1850209 ps, negedge CLK:1850266 ps, 96 ps );
+#    Time: 1850266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1850209 ps, negedge CLK:1850266 ps, 96 ps );
+#    Time: 1850266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:1850209 ps, negedge CLK:1850266 ps, 96 ps );
+#    Time: 1850266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:5850265 ps, negedge CLK:5850281 ps, 96 ps );
+#    Time: 5850281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:5890265 ps, negedge CLK:5890281 ps, 96 ps );
+#    Time: 5890281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:5910208 ps, :5910260 ps, 83 ps );
+#    Time: 5910260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:5910243 ps, :5910290 ps, 83 ps );
+#    Time: 5910290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:5970251 ps, negedge CLK:5970281 ps, 42 ps );
+#    Time: 5970281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:5990228 ps, negedge CLK:5990230 ps, 96 ps );
+#    Time: 5990230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 0a
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:6030251 ps, negedge CLK:6030281 ps, 42 ps );
+#    Time: 6030281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:6070251 ps, negedge CLK:6070281 ps, 42 ps );
+#    Time: 6070281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:6090208 ps, :6090260 ps, 83 ps );
+#    Time: 6090260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:6090243 ps, :6090290 ps, 83 ps );
+#    Time: 6090290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6090265 ps, negedge CLK:6090290 ps, 96 ps );
+#    Time: 6090290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6090265 ps, negedge CLK:6090298 ps, 96 ps );
+#    Time: 6090298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# sending: 14
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6250265 ps, negedge CLK:6250281 ps, 96 ps );
+#    Time: 6250281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:6270208 ps, :6270260 ps, 83 ps );
+#    Time: 6270260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:6270251 ps, negedge CLK:6270260 ps, 42 ps );
+#    Time: 6270260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:6270243 ps, :6270290 ps, 83 ps );
+#    Time: 6270290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:6270251 ps, negedge CLK:6270290 ps, 42 ps );
+#    Time: 6270290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6290265 ps, negedge CLK:6290303 ps, 96 ps );
+#    Time: 6290303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# sending: 1e
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:6390251 ps, negedge CLK:6390281 ps, 42 ps );
+#    Time: 6390281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:6450208 ps, :6450260 ps, 83 ps );
+#    Time: 6450260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:6450243 ps, :6450290 ps, 83 ps );
+#    Time: 6450290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6470265 ps, negedge CLK:6470303 ps, 96 ps );
+#    Time: 6470303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# sending: 28
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:6610251 ps, negedge CLK:6610281 ps, 42 ps );
+#    Time: 6610281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:6630208 ps, :6630260 ps, 83 ps );
+#    Time: 6630260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:6630243 ps, :6630290 ps, 83 ps );
+#    Time: 6630290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6630265 ps, negedge CLK:6630290 ps, 96 ps );
+#    Time: 6630290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6630265 ps, negedge CLK:6630298 ps, 96 ps );
+#    Time: 6630298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6730209 ps, negedge CLK:6730266 ps, 96 ps );
+#    Time: 6730266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6730209 ps, negedge CLK:6730266 ps, 96 ps );
+#    Time: 6730266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6730209 ps, negedge CLK:6730266 ps, 96 ps );
+#    Time: 6730266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6730209 ps, negedge CLK:6730266 ps, 96 ps );
+#    Time: 6730266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:6730209 ps, negedge CLK:6730266 ps, 96 ps );
+#    Time: 6730266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:10730265 ps, negedge CLK:10730281 ps, 96 ps );
+#    Time: 10730281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:10770265 ps, negedge CLK:10770281 ps, 96 ps );
+#    Time: 10770281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:10790208 ps, :10790260 ps, 83 ps );
+#    Time: 10790260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:10790243 ps, :10790290 ps, 83 ps );
+#    Time: 10790290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:10850251 ps, negedge CLK:10850281 ps, 42 ps );
+#    Time: 10850281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:10870228 ps, negedge CLK:10870230 ps, 96 ps );
+#    Time: 10870230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 02
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:10910251 ps, negedge CLK:10910281 ps, 42 ps );
+#    Time: 10910281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:10970208 ps, :10970260 ps, 83 ps );
+#    Time: 10970260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:10970243 ps, :10970290 ps, 83 ps );
+#    Time: 10970290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:11070209 ps, negedge CLK:11070266 ps, 96 ps );
+#    Time: 11070266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:11070209 ps, negedge CLK:11070266 ps, 96 ps );
+#    Time: 11070266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 04
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:15110265 ps, negedge CLK:15110281 ps, 96 ps );
+#    Time: 15110281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:15130208 ps, :15130260 ps, 83 ps );
+#    Time: 15130260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:15130243 ps, :15130290 ps, 83 ps );
+#    Time: 15130290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:15230209 ps, negedge CLK:15230266 ps, 96 ps );
+#    Time: 15230266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:15230209 ps, negedge CLK:15230266 ps, 96 ps );
+#    Time: 15230266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 06
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:19230251 ps, negedge CLK:19230281 ps, 42 ps );
+#    Time: 19230281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:19270265 ps, negedge CLK:19270281 ps, 96 ps );
+#    Time: 19270281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:19290208 ps, :19290260 ps, 83 ps );
+#    Time: 19290260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:19290243 ps, :19290290 ps, 83 ps );
+#    Time: 19290290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:19390209 ps, negedge CLK:19390266 ps, 96 ps );
+#    Time: 19390266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:19390209 ps, negedge CLK:19390266 ps, 96 ps );
+#    Time: 19390266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:19390209 ps, negedge CLK:19390266 ps, 96 ps );
+#    Time: 19390266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 08
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:23430251 ps, negedge CLK:23430281 ps, 42 ps );
+#    Time: 23430281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:23450208 ps, :23450260 ps, 83 ps );
+#    Time: 23450260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:23450243 ps, :23450290 ps, 83 ps );
+#    Time: 23450290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:23450265 ps, negedge CLK:23450290 ps, 96 ps );
+#    Time: 23450290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:23450265 ps, negedge CLK:23450298 ps, 96 ps );
+#    Time: 23450298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:23630208 ps, :23630260 ps, 83 ps );
+#    Time: 23630260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:23630243 ps, :23630290 ps, 83 ps );
+#    Time: 23630290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:23710228 ps, negedge CLK:23710230 ps, 96 ps );
+#    Time: 23710230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 0a
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:23750251 ps, negedge CLK:23750281 ps, 42 ps );
+#    Time: 23750281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:23790251 ps, negedge CLK:23790281 ps, 42 ps );
+#    Time: 23790281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:23810208 ps, :23810260 ps, 83 ps );
+#    Time: 23810260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:23810243 ps, :23810290 ps, 83 ps );
+#    Time: 23810290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:23810265 ps, negedge CLK:23810290 ps, 96 ps );
+#    Time: 23810290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:23810265 ps, negedge CLK:23810298 ps, 96 ps );
+#    Time: 23810298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# sending: 0c
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:23990208 ps, :23990260 ps, 83 ps );
+#    Time: 23990260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:23990243 ps, :23990290 ps, 83 ps );
+#    Time: 23990290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:23990265 ps, negedge CLK:23990290 ps, 96 ps );
+#    Time: 23990290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:23990265 ps, negedge CLK:23990298 ps, 96 ps );
+#    Time: 23990298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# sending: 0e
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:24110251 ps, negedge CLK:24110281 ps, 42 ps );
+#    Time: 24110281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:24170208 ps, :24170260 ps, 83 ps );
+#    Time: 24170260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:24170243 ps, :24170290 ps, 83 ps );
+#    Time: 24170290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:24170265 ps, negedge CLK:24170290 ps, 96 ps );
+#    Time: 24170290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:24170265 ps, negedge CLK:24170298 ps, 96 ps );
+#    Time: 24170298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:24270209 ps, negedge CLK:24270266 ps, 96 ps );
+#    Time: 24270266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:24270209 ps, negedge CLK:24270266 ps, 96 ps );
+#    Time: 24270266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:24270209 ps, negedge CLK:24270266 ps, 96 ps );
+#    Time: 24270266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:24270209 ps, negedge CLK:24270266 ps, 96 ps );
+#    Time: 24270266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 10
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:28330208 ps, :28330260 ps, 83 ps );
+#    Time: 28330260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:28330251 ps, negedge CLK:28330260 ps, 42 ps );
+#    Time: 28330260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:28330243 ps, :28330290 ps, 83 ps );
+#    Time: 28330290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:28330251 ps, negedge CLK:28330290 ps, 42 ps );
+#    Time: 28330290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:28350265 ps, negedge CLK:28350303 ps, 96 ps );
+#    Time: 28350303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:28430209 ps, negedge CLK:28430266 ps, 96 ps );
+#    Time: 28430266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:28430209 ps, negedge CLK:28430266 ps, 96 ps );
+#    Time: 28430266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:28430209 ps, negedge CLK:28430266 ps, 96 ps );
+#    Time: 28430266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:32430265 ps, negedge CLK:32430281 ps, 96 ps );
+#    Time: 32430281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:32470265 ps, negedge CLK:32470281 ps, 96 ps );
+#    Time: 32470281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:32490208 ps, :32490260 ps, 83 ps );
+#    Time: 32490260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:32490243 ps, :32490290 ps, 83 ps );
+#    Time: 32490290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:32550251 ps, negedge CLK:32550281 ps, 42 ps );
+#    Time: 32550281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:32570228 ps, negedge CLK:32570230 ps, 96 ps );
+#    Time: 32570230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 12
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:32610251 ps, negedge CLK:32610281 ps, 42 ps );
+#    Time: 32610281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:32670208 ps, :32670260 ps, 83 ps );
+#    Time: 32670260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:32670251 ps, negedge CLK:32670260 ps, 42 ps );
+#    Time: 32670260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:32670243 ps, :32670290 ps, 83 ps );
+#    Time: 32670290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:32670251 ps, negedge CLK:32670290 ps, 42 ps );
+#    Time: 32670290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:32690265 ps, negedge CLK:32690303 ps, 96 ps );
+#    Time: 32690303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:32770209 ps, negedge CLK:32770266 ps, 96 ps );
+#    Time: 32770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:32770209 ps, negedge CLK:32770266 ps, 96 ps );
+#    Time: 32770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:32770209 ps, negedge CLK:32770266 ps, 96 ps );
+#    Time: 32770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:32770209 ps, negedge CLK:32770266 ps, 96 ps );
+#    Time: 32770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 14
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:36810265 ps, negedge CLK:36810281 ps, 96 ps );
+#    Time: 36810281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:36830208 ps, :36830260 ps, 83 ps );
+#    Time: 36830260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:36830251 ps, negedge CLK:36830260 ps, 42 ps );
+#    Time: 36830260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:36830243 ps, :36830290 ps, 83 ps );
+#    Time: 36830290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:36830251 ps, negedge CLK:36830290 ps, 42 ps );
+#    Time: 36830290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:36850265 ps, negedge CLK:36850303 ps, 96 ps );
+#    Time: 36850303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:36930209 ps, negedge CLK:36930266 ps, 96 ps );
+#    Time: 36930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:36930209 ps, negedge CLK:36930266 ps, 96 ps );
+#    Time: 36930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:36930209 ps, negedge CLK:36930266 ps, 96 ps );
+#    Time: 36930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:36930209 ps, negedge CLK:36930266 ps, 96 ps );
+#    Time: 36930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 16
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:40930251 ps, negedge CLK:40930281 ps, 42 ps );
+#    Time: 40930281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:40970265 ps, negedge CLK:40970281 ps, 96 ps );
+#    Time: 40970281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:40990208 ps, :40990260 ps, 83 ps );
+#    Time: 40990260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:40990251 ps, negedge CLK:40990260 ps, 42 ps );
+#    Time: 40990260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:40990243 ps, :40990290 ps, 83 ps );
+#    Time: 40990290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:40990251 ps, negedge CLK:40990290 ps, 42 ps );
+#    Time: 40990290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41010265 ps, negedge CLK:41010303 ps, 96 ps );
+#    Time: 41010303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# sending: 18
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:41150251 ps, negedge CLK:41150281 ps, 42 ps );
+#    Time: 41150281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:41170208 ps, :41170260 ps, 83 ps );
+#    Time: 41170260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:41170243 ps, :41170290 ps, 83 ps );
+#    Time: 41170290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41190265 ps, negedge CLK:41190303 ps, 96 ps );
+#    Time: 41190303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:41350208 ps, :41350260 ps, 83 ps );
+#    Time: 41350260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:41350243 ps, :41350290 ps, 83 ps );
+#    Time: 41350290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41430228 ps, negedge CLK:41430230 ps, 96 ps );
+#    Time: 41430230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 1a
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:41470251 ps, negedge CLK:41470281 ps, 42 ps );
+#    Time: 41470281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:41510251 ps, negedge CLK:41510281 ps, 42 ps );
+#    Time: 41510281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:41530208 ps, :41530260 ps, 83 ps );
+#    Time: 41530260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:41530243 ps, :41530290 ps, 83 ps );
+#    Time: 41530290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41550265 ps, negedge CLK:41550303 ps, 96 ps );
+#    Time: 41550303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# sending: 1c
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:41710208 ps, :41710260 ps, 83 ps );
+#    Time: 41710260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:41710243 ps, :41710290 ps, 83 ps );
+#    Time: 41710290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41730265 ps, negedge CLK:41730303 ps, 96 ps );
+#    Time: 41730303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41810209 ps, negedge CLK:41810266 ps, 96 ps );
+#    Time: 41810266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41810209 ps, negedge CLK:41810266 ps, 96 ps );
+#    Time: 41810266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41810209 ps, negedge CLK:41810266 ps, 96 ps );
+#    Time: 41810266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:41810209 ps, negedge CLK:41810266 ps, 96 ps );
+#    Time: 41810266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 1e
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:45810251 ps, negedge CLK:45810281 ps, 42 ps );
+#    Time: 45810281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:45870208 ps, :45870260 ps, 83 ps );
+#    Time: 45870260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:45870243 ps, :45870290 ps, 83 ps );
+#    Time: 45870290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:45890265 ps, negedge CLK:45890303 ps, 96 ps );
+#    Time: 45890303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:45970209 ps, negedge CLK:45970266 ps, 96 ps );
+#    Time: 45970266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:45970209 ps, negedge CLK:45970266 ps, 96 ps );
+#    Time: 45970266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:45970209 ps, negedge CLK:45970266 ps, 96 ps );
+#    Time: 45970266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:45970209 ps, negedge CLK:45970266 ps, 96 ps );
+#    Time: 45970266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:45970209 ps, negedge CLK:45970266 ps, 96 ps );
+#    Time: 45970266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 1f
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:50030208 ps, :50030260 ps, 83 ps );
+#    Time: 50030260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:50030243 ps, :50030290 ps, 83 ps );
+#    Time: 50030290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:50050265 ps, negedge CLK:50050303 ps, 96 ps );
+#    Time: 50050303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:50130209 ps, negedge CLK:50130266 ps, 96 ps );
+#    Time: 50130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:50130209 ps, negedge CLK:50130266 ps, 96 ps );
+#    Time: 50130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:50130209 ps, negedge CLK:50130266 ps, 96 ps );
+#    Time: 50130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:50130209 ps, negedge CLK:50130266 ps, 96 ps );
+#    Time: 50130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:50130209 ps, negedge CLK:50130266 ps, 96 ps );
+#    Time: 50130266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54130265 ps, negedge CLK:54130281 ps, 96 ps );
+#    Time: 54130281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54170265 ps, negedge CLK:54170281 ps, 96 ps );
+#    Time: 54170281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:54190208 ps, :54190260 ps, 83 ps );
+#    Time: 54190260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:54190243 ps, :54190290 ps, 83 ps );
+#    Time: 54190290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:54250251 ps, negedge CLK:54250281 ps, 42 ps );
+#    Time: 54250281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54270228 ps, negedge CLK:54270230 ps, 96 ps );
+#    Time: 54270230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 7f
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:54370208 ps, :54370260 ps, 83 ps );
+#    Time: 54370260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:54370243 ps, :54370290 ps, 83 ps );
+#    Time: 54370290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54430265 ps, negedge CLK:54430281 ps, 96 ps );
+#    Time: 54430281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54470209 ps, negedge CLK:54470266 ps, 96 ps );
+#    Time: 54470266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54470209 ps, negedge CLK:54470266 ps, 96 ps );
+#    Time: 54470266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54470209 ps, negedge CLK:54470266 ps, 96 ps );
+#    Time: 54470266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54470209 ps, negedge CLK:54470266 ps, 96 ps );
+#    Time: 54470266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54470209 ps, negedge CLK:54470266 ps, 96 ps );
+#    Time: 54470266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54470209 ps, negedge CLK:54470266 ps, 96 ps );
+#    Time: 54470266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54470209 ps, negedge CLK:54470266 ps, 96 ps );
+#    Time: 54470266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 7f
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:54730208 ps, :54730260 ps, 83 ps );
+#    Time: 54730260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:54730243 ps, :54730290 ps, 83 ps );
+#    Time: 54730290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54790265 ps, negedge CLK:54790281 ps, 96 ps );
+#    Time: 54790281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54830209 ps, negedge CLK:54830266 ps, 96 ps );
+#    Time: 54830266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54830209 ps, negedge CLK:54830266 ps, 96 ps );
+#    Time: 54830266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54830209 ps, negedge CLK:54830266 ps, 96 ps );
+#    Time: 54830266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54830209 ps, negedge CLK:54830266 ps, 96 ps );
+#    Time: 54830266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54830209 ps, negedge CLK:54830266 ps, 96 ps );
+#    Time: 54830266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54830209 ps, negedge CLK:54830266 ps, 96 ps );
+#    Time: 54830266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:54830209 ps, negedge CLK:54830266 ps, 96 ps );
+#    Time: 54830266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 7f
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:55090208 ps, :55090260 ps, 83 ps );
+#    Time: 55090260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:55090243 ps, :55090290 ps, 83 ps );
+#    Time: 55090290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55150265 ps, negedge CLK:55150281 ps, 96 ps );
+#    Time: 55150281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55190209 ps, negedge CLK:55190266 ps, 96 ps );
+#    Time: 55190266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55190209 ps, negedge CLK:55190266 ps, 96 ps );
+#    Time: 55190266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55190209 ps, negedge CLK:55190266 ps, 96 ps );
+#    Time: 55190266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55190209 ps, negedge CLK:55190266 ps, 96 ps );
+#    Time: 55190266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55190209 ps, negedge CLK:55190266 ps, 96 ps );
+#    Time: 55190266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55190209 ps, negedge CLK:55190266 ps, 96 ps );
+#    Time: 55190266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55190209 ps, negedge CLK:55190266 ps, 96 ps );
+#    Time: 55190266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 7f
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:55450208 ps, :55450260 ps, 83 ps );
+#    Time: 55450260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:55450243 ps, :55450290 ps, 83 ps );
+#    Time: 55450290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55510265 ps, negedge CLK:55510281 ps, 96 ps );
+#    Time: 55510281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55550209 ps, negedge CLK:55550266 ps, 96 ps );
+#    Time: 55550266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55550209 ps, negedge CLK:55550266 ps, 96 ps );
+#    Time: 55550266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55550209 ps, negedge CLK:55550266 ps, 96 ps );
+#    Time: 55550266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55550209 ps, negedge CLK:55550266 ps, 96 ps );
+#    Time: 55550266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55550209 ps, negedge CLK:55550266 ps, 96 ps );
+#    Time: 55550266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55550209 ps, negedge CLK:55550266 ps, 96 ps );
+#    Time: 55550266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:55550209 ps, negedge CLK:55550266 ps, 96 ps );
+#    Time: 55550266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:59550265 ps, negedge CLK:59550281 ps, 96 ps );
+#    Time: 59550281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:59590265 ps, negedge CLK:59590281 ps, 96 ps );
+#    Time: 59590281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:59610208 ps, :59610260 ps, 83 ps );
+#    Time: 59610260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:59610243 ps, :59610290 ps, 83 ps );
+#    Time: 59610290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:59670251 ps, negedge CLK:59670281 ps, 42 ps );
+#    Time: 59670281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:59690228 ps, negedge CLK:59690230 ps, 96 ps );
+#    Time: 59690230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 22
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:59730251 ps, negedge CLK:59730281 ps, 42 ps );
+#    Time: 59730281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:59790208 ps, :59790260 ps, 83 ps );
+#    Time: 59790260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:59790243 ps, :59790290 ps, 83 ps );
+#    Time: 59790290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:59890209 ps, negedge CLK:59890266 ps, 96 ps );
+#    Time: 59890266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:59890209 ps, negedge CLK:59890266 ps, 96 ps );
+#    Time: 59890266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:59890209 ps, negedge CLK:59890266 ps, 96 ps );
+#    Time: 59890266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:59890209 ps, negedge CLK:59890266 ps, 96 ps );
+#    Time: 59890266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 24
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:63930265 ps, negedge CLK:63930281 ps, 96 ps );
+#    Time: 63930281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:63950208 ps, :63950260 ps, 83 ps );
+#    Time: 63950260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:63950243 ps, :63950290 ps, 83 ps );
+#    Time: 63950290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 26
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:64070251 ps, negedge CLK:64070281 ps, 42 ps );
+#    Time: 64070281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64110265 ps, negedge CLK:64110281 ps, 96 ps );
+#    Time: 64110281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:64130208 ps, :64130260 ps, 83 ps );
+#    Time: 64130260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:64130243 ps, :64130290 ps, 83 ps );
+#    Time: 64130290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 28
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:64290251 ps, negedge CLK:64290281 ps, 42 ps );
+#    Time: 64290281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:64310208 ps, :64310260 ps, 83 ps );
+#    Time: 64310260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:64310243 ps, :64310290 ps, 83 ps );
+#    Time: 64310290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64310265 ps, negedge CLK:64310290 ps, 96 ps );
+#    Time: 64310290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64310265 ps, negedge CLK:64310298 ps, 96 ps );
+#    Time: 64310298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:64490208 ps, :64490260 ps, 83 ps );
+#    Time: 64490260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:64490243 ps, :64490290 ps, 83 ps );
+#    Time: 64490290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64570228 ps, negedge CLK:64570230 ps, 96 ps );
+#    Time: 64570230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 2a
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:64610251 ps, negedge CLK:64610281 ps, 42 ps );
+#    Time: 64610281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:64650251 ps, negedge CLK:64650281 ps, 42 ps );
+#    Time: 64650281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:64670208 ps, :64670260 ps, 83 ps );
+#    Time: 64670260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:64670243 ps, :64670290 ps, 83 ps );
+#    Time: 64670290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64670265 ps, negedge CLK:64670290 ps, 96 ps );
+#    Time: 64670290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64670265 ps, negedge CLK:64670298 ps, 96 ps );
+#    Time: 64670298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64770209 ps, negedge CLK:64770266 ps, 96 ps );
+#    Time: 64770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64770209 ps, negedge CLK:64770266 ps, 96 ps );
+#    Time: 64770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64770209 ps, negedge CLK:64770266 ps, 96 ps );
+#    Time: 64770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64770209 ps, negedge CLK:64770266 ps, 96 ps );
+#    Time: 64770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64770209 ps, negedge CLK:64770266 ps, 96 ps );
+#    Time: 64770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:64770209 ps, negedge CLK:64770266 ps, 96 ps );
+#    Time: 64770266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 2c
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:68830208 ps, :68830260 ps, 83 ps );
+#    Time: 68830260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:68830243 ps, :68830290 ps, 83 ps );
+#    Time: 68830290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:68830265 ps, negedge CLK:68830290 ps, 96 ps );
+#    Time: 68830290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:68830265 ps, negedge CLK:68830298 ps, 96 ps );
+#    Time: 68830298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:68930209 ps, negedge CLK:68930266 ps, 96 ps );
+#    Time: 68930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:68930209 ps, negedge CLK:68930266 ps, 96 ps );
+#    Time: 68930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:68930209 ps, negedge CLK:68930266 ps, 96 ps );
+#    Time: 68930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:68930209 ps, negedge CLK:68930266 ps, 96 ps );
+#    Time: 68930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:68930209 ps, negedge CLK:68930266 ps, 96 ps );
+#    Time: 68930266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 2e
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:72930251 ps, negedge CLK:72930281 ps, 42 ps );
+#    Time: 72930281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:72990208 ps, :72990260 ps, 83 ps );
+#    Time: 72990260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:72990243 ps, :72990290 ps, 83 ps );
+#    Time: 72990290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:72990265 ps, negedge CLK:72990290 ps, 96 ps );
+#    Time: 72990290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:72990265 ps, negedge CLK:72990298 ps, 96 ps );
+#    Time: 72990298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:73090209 ps, negedge CLK:73090266 ps, 96 ps );
+#    Time: 73090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:73090209 ps, negedge CLK:73090266 ps, 96 ps );
+#    Time: 73090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:73090209 ps, negedge CLK:73090266 ps, 96 ps );
+#    Time: 73090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:73090209 ps, negedge CLK:73090266 ps, 96 ps );
+#    Time: 73090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:73090209 ps, negedge CLK:73090266 ps, 96 ps );
+#    Time: 73090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:73090209 ps, negedge CLK:73090266 ps, 96 ps );
+#    Time: 73090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: 30
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:77150208 ps, :77150260 ps, 83 ps );
+#    Time: 77150260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:77150251 ps, negedge CLK:77150260 ps, 42 ps );
+#    Time: 77150260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:77150243 ps, :77150290 ps, 83 ps );
+#    Time: 77150290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:77150251 ps, negedge CLK:77150290 ps, 42 ps );
+#    Time: 77150290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:77250209 ps, negedge CLK:77250266 ps, 96 ps );
+#    Time: 77250266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:77250209 ps, negedge CLK:77250266 ps, 96 ps );
+#    Time: 77250266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:77250209 ps, negedge CLK:77250266 ps, 96 ps );
+#    Time: 77250266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:77250209 ps, negedge CLK:77250266 ps, 96 ps );
+#    Time: 77250266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:81250265 ps, negedge CLK:81250281 ps, 96 ps );
+#    Time: 81250281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:81290265 ps, negedge CLK:81290281 ps, 96 ps );
+#    Time: 81290281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:81310208 ps, :81310260 ps, 83 ps );
+#    Time: 81310260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:81310243 ps, :81310290 ps, 83 ps );
+#    Time: 81310290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:81370251 ps, negedge CLK:81370281 ps, 42 ps );
+#    Time: 81370281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:81390228 ps, negedge CLK:81390230 ps, 96 ps );
+#    Time: 81390230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 02
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:81430251 ps, negedge CLK:81430281 ps, 42 ps );
+#    Time: 81430281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:81490208 ps, :81490260 ps, 83 ps );
+#    Time: 81490260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:81490243 ps, :81490290 ps, 83 ps );
+#    Time: 81490290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:81590209 ps, negedge CLK:81590266 ps, 96 ps );
+#    Time: 81590266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:81590209 ps, negedge CLK:81590266 ps, 96 ps );
+#    Time: 81590266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 04
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:85630265 ps, negedge CLK:85630281 ps, 96 ps );
+#    Time: 85630281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:85650208 ps, :85650260 ps, 83 ps );
+#    Time: 85650260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:85650243 ps, :85650290 ps, 83 ps );
+#    Time: 85650290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:85750209 ps, negedge CLK:85750266 ps, 96 ps );
+#    Time: 85750266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:85750209 ps, negedge CLK:85750266 ps, 96 ps );
+#    Time: 85750266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 06
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:89750251 ps, negedge CLK:89750281 ps, 42 ps );
+#    Time: 89750281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:89790265 ps, negedge CLK:89790281 ps, 96 ps );
+#    Time: 89790281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:89810208 ps, :89810260 ps, 83 ps );
+#    Time: 89810260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:89810243 ps, :89810290 ps, 83 ps );
+#    Time: 89810290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:89910209 ps, negedge CLK:89910266 ps, 96 ps );
+#    Time: 89910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:89910209 ps, negedge CLK:89910266 ps, 96 ps );
+#    Time: 89910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:89910209 ps, negedge CLK:89910266 ps, 96 ps );
+#    Time: 89910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 08
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:93950251 ps, negedge CLK:93950281 ps, 42 ps );
+#    Time: 93950281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:93970208 ps, :93970260 ps, 83 ps );
+#    Time: 93970260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:93970243 ps, :93970290 ps, 83 ps );
+#    Time: 93970290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:93970265 ps, negedge CLK:93970290 ps, 96 ps );
+#    Time: 93970290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:93970265 ps, negedge CLK:93970298 ps, 96 ps );
+#    Time: 93970298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# sending: 83
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:94150208 ps, :94150260 ps, 83 ps );
+#    Time: 94150260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:94150243 ps, :94150290 ps, 83 ps );
+#    Time: 94150290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:94210251 ps, negedge CLK:94210281 ps, 42 ps );
+#    Time: 94210281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94230228 ps, negedge CLK:94230230 ps, 96 ps );
+#    Time: 94230230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94270265 ps, negedge CLK:94270281 ps, 96 ps );
+#    Time: 94270281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94310265 ps, negedge CLK:94310281 ps, 96 ps );
+#    Time: 94310281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:94330208 ps, :94330260 ps, 83 ps );
+#    Time: 94330260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:94330243 ps, :94330290 ps, 83 ps );
+#    Time: 94330290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:94390251 ps, negedge CLK:94390281 ps, 42 ps );
+#    Time: 94390281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94410228 ps, negedge CLK:94410230 ps, 96 ps );
+#    Time: 94410230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:94510208 ps, :94510260 ps, 83 ps );
+#    Time: 94510260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:94510243 ps, :94510290 ps, 83 ps );
+#    Time: 94510290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94590228 ps, negedge CLK:94590230 ps, 96 ps );
+#    Time: 94590230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94630265 ps, negedge CLK:94630281 ps, 96 ps );
+#    Time: 94630281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94670265 ps, negedge CLK:94670281 ps, 96 ps );
+#    Time: 94670281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:94690208 ps, :94690260 ps, 83 ps );
+#    Time: 94690260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:94690243 ps, :94690290 ps, 83 ps );
+#    Time: 94690290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:94750251 ps, negedge CLK:94750281 ps, 42 ps );
+#    Time: 94750281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94770228 ps, negedge CLK:94770230 ps, 96 ps );
+#    Time: 94770230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94790209 ps, negedge CLK:94790266 ps, 96 ps );
+#    Time: 94790266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94790209 ps, negedge CLK:94790266 ps, 96 ps );
+#    Time: 94790266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94790209 ps, negedge CLK:94790266 ps, 96 ps );
+#    Time: 94790266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94790209 ps, negedge CLK:94790266 ps, 96 ps );
+#    Time: 94790266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94790209 ps, negedge CLK:94790266 ps, 96 ps );
+#    Time: 94790266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94790209 ps, negedge CLK:94790266 ps, 96 ps );
+#    Time: 94790266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:94790209 ps, negedge CLK:94790266 ps, 96 ps );
+#    Time: 94790266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:98850208 ps, :98850260 ps, 83 ps );
+#    Time: 98850260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:98850243 ps, :98850290 ps, 83 ps );
+#    Time: 98850290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:98930228 ps, negedge CLK:98930230 ps, 96 ps );
+#    Time: 98930230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:98950209 ps, negedge CLK:98950266 ps, 96 ps );
+#    Time: 98950266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:98950209 ps, negedge CLK:98950266 ps, 96 ps );
+#    Time: 98950266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:98950209 ps, negedge CLK:98950266 ps, 96 ps );
+#    Time: 98950266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:98950209 ps, negedge CLK:98950266 ps, 96 ps );
+#    Time: 98950266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:102950265 ps, negedge CLK:102950281 ps, 96 ps );
+#    Time: 102950281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:102990265 ps, negedge CLK:102990281 ps, 96 ps );
+#    Time: 102990281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:103010208 ps, :103010260 ps, 83 ps );
+#    Time: 103010260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:103010243 ps, :103010290 ps, 83 ps );
+#    Time: 103010290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:103070251 ps, negedge CLK:103070281 ps, 42 ps );
+#    Time: 103070281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:103090228 ps, negedge CLK:103090230 ps, 96 ps );
+#    Time: 103090230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 12
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:103130251 ps, negedge CLK:103130281 ps, 42 ps );
+#    Time: 103130281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:103190208 ps, :103190260 ps, 83 ps );
+#    Time: 103190260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:103190251 ps, negedge CLK:103190260 ps, 42 ps );
+#    Time: 103190260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:103190243 ps, :103190290 ps, 83 ps );
+#    Time: 103190290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:103190251 ps, negedge CLK:103190290 ps, 42 ps );
+#    Time: 103190290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:103210265 ps, negedge CLK:103210303 ps, 96 ps );
+#    Time: 103210303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:103290209 ps, negedge CLK:103290266 ps, 96 ps );
+#    Time: 103290266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:103290209 ps, negedge CLK:103290266 ps, 96 ps );
+#    Time: 103290266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:103290209 ps, negedge CLK:103290266 ps, 96 ps );
+#    Time: 103290266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:103290209 ps, negedge CLK:103290266 ps, 96 ps );
+#    Time: 103290266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# sending: 14
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:107330265 ps, negedge CLK:107330281 ps, 96 ps );
+#    Time: 107330281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:107350208 ps, :107350260 ps, 83 ps );
+#    Time: 107350260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:107350251 ps, negedge CLK:107350260 ps, 42 ps );
+#    Time: 107350260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:107350243 ps, :107350290 ps, 83 ps );
+#    Time: 107350290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:107350251 ps, negedge CLK:107350290 ps, 42 ps );
+#    Time: 107350290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:107370265 ps, negedge CLK:107370303 ps, 96 ps );
+#    Time: 107370303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:107450209 ps, negedge CLK:107450266 ps, 96 ps );
+#    Time: 107450266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:107450209 ps, negedge CLK:107450266 ps, 96 ps );
+#    Time: 107450266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:107450209 ps, negedge CLK:107450266 ps, 96 ps );
+#    Time: 107450266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:107450209 ps, negedge CLK:107450266 ps, 96 ps );
+#    Time: 107450266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# sending: 16
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:111450251 ps, negedge CLK:111450281 ps, 42 ps );
+#    Time: 111450281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:111490265 ps, negedge CLK:111490281 ps, 96 ps );
+#    Time: 111490281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:111510208 ps, :111510260 ps, 83 ps );
+#    Time: 111510260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:111510251 ps, negedge CLK:111510260 ps, 42 ps );
+#    Time: 111510260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:111510243 ps, :111510290 ps, 83 ps );
+#    Time: 111510290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:111510251 ps, negedge CLK:111510290 ps, 42 ps );
+#    Time: 111510290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:111530265 ps, negedge CLK:111530303 ps, 96 ps );
+#    Time: 111530303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# sending: 18
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:111670251 ps, negedge CLK:111670281 ps, 42 ps );
+#    Time: 111670281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:111690208 ps, :111690260 ps, 83 ps );
+#    Time: 111690260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:111690243 ps, :111690290 ps, 83 ps );
+#    Time: 111690290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:111710265 ps, negedge CLK:111710303 ps, 96 ps );
+#    Time: 111710303 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[4] 
+# sending: c1
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:111810265 ps, negedge CLK:111810281 ps, 96 ps );
+#    Time: 111810281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:111870208 ps, :111870260 ps, 83 ps );
+#    Time: 111870260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:111870243 ps, :111870290 ps, 83 ps );
+#    Time: 111870290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:111950228 ps, negedge CLK:111950230 ps, 96 ps );
+#    Time: 111950230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:111990265 ps, negedge CLK:111990281 ps, 96 ps );
+#    Time: 111990281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112030265 ps, negedge CLK:112030281 ps, 96 ps );
+#    Time: 112030281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:112050208 ps, :112050260 ps, 83 ps );
+#    Time: 112050260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:112050243 ps, :112050290 ps, 83 ps );
+#    Time: 112050290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:112110251 ps, negedge CLK:112110281 ps, 42 ps );
+#    Time: 112110281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112130228 ps, negedge CLK:112130230 ps, 96 ps );
+#    Time: 112130230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112170265 ps, negedge CLK:112170281 ps, 96 ps );
+#    Time: 112170281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112210265 ps, negedge CLK:112210281 ps, 96 ps );
+#    Time: 112210281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:112230208 ps, :112230260 ps, 83 ps );
+#    Time: 112230260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:112230243 ps, :112230290 ps, 83 ps );
+#    Time: 112230290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:112290251 ps, negedge CLK:112290281 ps, 42 ps );
+#    Time: 112290281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112310228 ps, negedge CLK:112310230 ps, 96 ps );
+#    Time: 112310230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112330209 ps, negedge CLK:112330266 ps, 96 ps );
+#    Time: 112330266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112330209 ps, negedge CLK:112330266 ps, 96 ps );
+#    Time: 112330266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112330209 ps, negedge CLK:112330266 ps, 96 ps );
+#    Time: 112330266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112330209 ps, negedge CLK:112330266 ps, 96 ps );
+#    Time: 112330266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112330209 ps, negedge CLK:112330266 ps, 96 ps );
+#    Time: 112330266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112330209 ps, negedge CLK:112330266 ps, 96 ps );
+#    Time: 112330266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:112330209 ps, negedge CLK:112330266 ps, 96 ps );
+#    Time: 112330266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:116390208 ps, :116390260 ps, 83 ps );
+#    Time: 116390260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:116390243 ps, :116390290 ps, 83 ps );
+#    Time: 116390290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:116470228 ps, negedge CLK:116470230 ps, 96 ps );
+#    Time: 116470230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:116490209 ps, negedge CLK:116490266 ps, 96 ps );
+#    Time: 116490266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:116490209 ps, negedge CLK:116490266 ps, 96 ps );
+#    Time: 116490266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:116490209 ps, negedge CLK:116490266 ps, 96 ps );
+#    Time: 116490266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:116490209 ps, negedge CLK:116490266 ps, 96 ps );
+#    Time: 116490266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:120550208 ps, :120550260 ps, 83 ps );
+#    Time: 120550260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:120550243 ps, :120550290 ps, 83 ps );
+#    Time: 120550290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:120630228 ps, negedge CLK:120630230 ps, 96 ps );
+#    Time: 120630230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:120650209 ps, negedge CLK:120650266 ps, 96 ps );
+#    Time: 120650266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:120650209 ps, negedge CLK:120650266 ps, 96 ps );
+#    Time: 120650266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:120650209 ps, negedge CLK:120650266 ps, 96 ps );
+#    Time: 120650266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:120650209 ps, negedge CLK:120650266 ps, 96 ps );
+#    Time: 120650266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# sending: a1
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:124650265 ps, negedge CLK:124650281 ps, 96 ps );
+#    Time: 124650281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:124710208 ps, :124710260 ps, 83 ps );
+#    Time: 124710260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:124710243 ps, :124710290 ps, 83 ps );
+#    Time: 124710290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:124770251 ps, negedge CLK:124770281 ps, 42 ps );
+#    Time: 124770281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:124790228 ps, negedge CLK:124790230 ps, 96 ps );
+#    Time: 124790230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:124830265 ps, negedge CLK:124830281 ps, 96 ps );
+#    Time: 124830281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:124870265 ps, negedge CLK:124870281 ps, 96 ps );
+#    Time: 124870281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:124890208 ps, :124890260 ps, 83 ps );
+#    Time: 124890260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:124890243 ps, :124890290 ps, 83 ps );
+#    Time: 124890290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:124950251 ps, negedge CLK:124950281 ps, 42 ps );
+#    Time: 124950281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:124970228 ps, negedge CLK:124970230 ps, 96 ps );
+#    Time: 124970230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:125070208 ps, :125070260 ps, 83 ps );
+#    Time: 125070260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:125070243 ps, :125070290 ps, 83 ps );
+#    Time: 125070290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125150228 ps, negedge CLK:125150230 ps, 96 ps );
+#    Time: 125150230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:125250208 ps, :125250260 ps, 83 ps );
+#    Time: 125250260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:125250243 ps, :125250290 ps, 83 ps );
+#    Time: 125250290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125330228 ps, negedge CLK:125330230 ps, 96 ps );
+#    Time: 125330230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125370265 ps, negedge CLK:125370281 ps, 96 ps );
+#    Time: 125370281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125410265 ps, negedge CLK:125410281 ps, 96 ps );
+#    Time: 125410281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:125430208 ps, :125430260 ps, 83 ps );
+#    Time: 125430260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:125430243 ps, :125430290 ps, 83 ps );
+#    Time: 125430290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:125490251 ps, negedge CLK:125490281 ps, 42 ps );
+#    Time: 125490281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125510228 ps, negedge CLK:125510230 ps, 96 ps );
+#    Time: 125510230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125530209 ps, negedge CLK:125530266 ps, 96 ps );
+#    Time: 125530266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125530209 ps, negedge CLK:125530266 ps, 96 ps );
+#    Time: 125530266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125530209 ps, negedge CLK:125530266 ps, 96 ps );
+#    Time: 125530266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125530209 ps, negedge CLK:125530266 ps, 96 ps );
+#    Time: 125530266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125530209 ps, negedge CLK:125530266 ps, 96 ps );
+#    Time: 125530266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125530209 ps, negedge CLK:125530266 ps, 96 ps );
+#    Time: 125530266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:125530209 ps, negedge CLK:125530266 ps, 96 ps );
+#    Time: 125530266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:129530265 ps, negedge CLK:129530281 ps, 96 ps );
+#    Time: 129530281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:129570265 ps, negedge CLK:129570281 ps, 96 ps );
+#    Time: 129570281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:129590208 ps, :129590260 ps, 83 ps );
+#    Time: 129590260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:129590243 ps, :129590290 ps, 83 ps );
+#    Time: 129590290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:129650251 ps, negedge CLK:129650281 ps, 42 ps );
+#    Time: 129650281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:129670228 ps, negedge CLK:129670230 ps, 96 ps );
+#    Time: 129670230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 22
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:129710251 ps, negedge CLK:129710281 ps, 42 ps );
+#    Time: 129710281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:129770208 ps, :129770260 ps, 83 ps );
+#    Time: 129770260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:129770243 ps, :129770290 ps, 83 ps );
+#    Time: 129770290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:129870209 ps, negedge CLK:129870266 ps, 96 ps );
+#    Time: 129870266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:129870209 ps, negedge CLK:129870266 ps, 96 ps );
+#    Time: 129870266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:129870209 ps, negedge CLK:129870266 ps, 96 ps );
+#    Time: 129870266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:129870209 ps, negedge CLK:129870266 ps, 96 ps );
+#    Time: 129870266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# sending: 24
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:133910265 ps, negedge CLK:133910281 ps, 96 ps );
+#    Time: 133910281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:133930208 ps, :133930260 ps, 83 ps );
+#    Time: 133930260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:133930243 ps, :133930290 ps, 83 ps );
+#    Time: 133930290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 26
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:134050251 ps, negedge CLK:134050281 ps, 42 ps );
+#    Time: 134050281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134090265 ps, negedge CLK:134090281 ps, 96 ps );
+#    Time: 134090281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:134110208 ps, :134110260 ps, 83 ps );
+#    Time: 134110260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:134110243 ps, :134110290 ps, 83 ps );
+#    Time: 134110290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: 28
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:134270251 ps, negedge CLK:134270281 ps, 42 ps );
+#    Time: 134270281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:134290208 ps, :134290260 ps, 83 ps );
+#    Time: 134290260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:134290243 ps, :134290290 ps, 83 ps );
+#    Time: 134290290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134290265 ps, negedge CLK:134290290 ps, 96 ps );
+#    Time: 134290290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134290265 ps, negedge CLK:134290298 ps, 96 ps );
+#    Time: 134290298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# sending: c6
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:134410251 ps, negedge CLK:134410281 ps, 42 ps );
+#    Time: 134410281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134450265 ps, negedge CLK:134450281 ps, 96 ps );
+#    Time: 134450281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:134470208 ps, :134470260 ps, 83 ps );
+#    Time: 134470260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:134470243 ps, :134470290 ps, 83 ps );
+#    Time: 134470290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134550228 ps, negedge CLK:134550230 ps, 96 ps );
+#    Time: 134550230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:134650208 ps, :134650260 ps, 83 ps );
+#    Time: 134650260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:134650243 ps, :134650290 ps, 83 ps );
+#    Time: 134650290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134730228 ps, negedge CLK:134730230 ps, 96 ps );
+#    Time: 134730230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134750209 ps, negedge CLK:134750266 ps, 96 ps );
+#    Time: 134750266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134750209 ps, negedge CLK:134750266 ps, 96 ps );
+#    Time: 134750266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134750209 ps, negedge CLK:134750266 ps, 96 ps );
+#    Time: 134750266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:134750209 ps, negedge CLK:134750266 ps, 96 ps );
+#    Time: 134750266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138750265 ps, negedge CLK:138750281 ps, 96 ps );
+#    Time: 138750281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138790265 ps, negedge CLK:138790281 ps, 96 ps );
+#    Time: 138790281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:138810208 ps, :138810260 ps, 83 ps );
+#    Time: 138810260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:138810243 ps, :138810290 ps, 83 ps );
+#    Time: 138810290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:138870251 ps, negedge CLK:138870281 ps, 42 ps );
+#    Time: 138870281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138890228 ps, negedge CLK:138890230 ps, 96 ps );
+#    Time: 138890230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138910209 ps, negedge CLK:138910266 ps, 96 ps );
+#    Time: 138910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138910209 ps, negedge CLK:138910266 ps, 96 ps );
+#    Time: 138910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138910209 ps, negedge CLK:138910266 ps, 96 ps );
+#    Time: 138910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138910209 ps, negedge CLK:138910266 ps, 96 ps );
+#    Time: 138910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138910209 ps, negedge CLK:138910266 ps, 96 ps );
+#    Time: 138910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138910209 ps, negedge CLK:138910266 ps, 96 ps );
+#    Time: 138910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:138910209 ps, negedge CLK:138910266 ps, 96 ps );
+#    Time: 138910266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# sending: 46
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:142910251 ps, negedge CLK:142910281 ps, 42 ps );
+#    Time: 142910281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:142950265 ps, negedge CLK:142950281 ps, 96 ps );
+#    Time: 142950281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:142970208 ps, :142970260 ps, 83 ps );
+#    Time: 142970260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:142970243 ps, :142970290 ps, 83 ps );
+#    Time: 142970290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:143030265 ps, negedge CLK:143030281 ps, 96 ps );
+#    Time: 143030281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:143070209 ps, negedge CLK:143070266 ps, 96 ps );
+#    Time: 143070266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:143070209 ps, negedge CLK:143070266 ps, 96 ps );
+#    Time: 143070266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:143070209 ps, negedge CLK:143070266 ps, 96 ps );
+#    Time: 143070266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:143070209 ps, negedge CLK:143070266 ps, 96 ps );
+#    Time: 143070266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# sending: 48
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:147110251 ps, negedge CLK:147110281 ps, 42 ps );
+#    Time: 147110281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:147130208 ps, :147130260 ps, 83 ps );
+#    Time: 147130260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:147130243 ps, :147130290 ps, 83 ps );
+#    Time: 147130290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:147130265 ps, negedge CLK:147130290 ps, 96 ps );
+#    Time: 147130290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:147130265 ps, negedge CLK:147130298 ps, 96 ps );
+#    Time: 147130298 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:147190265 ps, negedge CLK:147190281 ps, 96 ps );
+#    Time: 147190281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:147230209 ps, negedge CLK:147230266 ps, 96 ps );
+#    Time: 147230266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:147230209 ps, negedge CLK:147230266 ps, 96 ps );
+#    Time: 147230266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[3] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:147230209 ps, negedge CLK:147230266 ps, 96 ps );
+#    Time: 147230266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:147230209 ps, negedge CLK:147230266 ps, 96 ps );
+#    Time: 147230266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# sending: c2
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:151230251 ps, negedge CLK:151230281 ps, 42 ps );
+#    Time: 151230281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:151290208 ps, :151290260 ps, 83 ps );
+#    Time: 151290260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:151290243 ps, :151290290 ps, 83 ps );
+#    Time: 151290290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151370228 ps, negedge CLK:151370230 ps, 96 ps );
+#    Time: 151370230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151410265 ps, negedge CLK:151410281 ps, 96 ps );
+#    Time: 151410281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151450265 ps, negedge CLK:151450281 ps, 96 ps );
+#    Time: 151450281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:151470208 ps, :151470260 ps, 83 ps );
+#    Time: 151470260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:151470243 ps, :151470290 ps, 83 ps );
+#    Time: 151470290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:151530251 ps, negedge CLK:151530281 ps, 42 ps );
+#    Time: 151530281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151550228 ps, negedge CLK:151550230 ps, 96 ps );
+#    Time: 151550230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151570209 ps, negedge CLK:151570266 ps, 96 ps );
+#    Time: 151570266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[5] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151570209 ps, negedge CLK:151570266 ps, 96 ps );
+#    Time: 151570266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151570209 ps, negedge CLK:151570266 ps, 96 ps );
+#    Time: 151570266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151570209 ps, negedge CLK:151570266 ps, 96 ps );
+#    Time: 151570266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151570209 ps, negedge CLK:151570266 ps, 96 ps );
+#    Time: 151570266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[4] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151570209 ps, negedge CLK:151570266 ps, 96 ps );
+#    Time: 151570266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:151570209 ps, negedge CLK:151570266 ps, 96 ps );
+#    Time: 151570266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:155630208 ps, :155630260 ps, 83 ps );
+#    Time: 155630260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:155630243 ps, :155630290 ps, 83 ps );
+#    Time: 155630290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:155710228 ps, negedge CLK:155710230 ps, 96 ps );
+#    Time: 155710230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: a5
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:155750265 ps, negedge CLK:155750281 ps, 96 ps );
+#    Time: 155750281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:155790265 ps, negedge CLK:155790281 ps, 96 ps );
+#    Time: 155790281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[2] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:155810208 ps, :155810260 ps, 83 ps );
+#    Time: 155810260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:155810243 ps, :155810290 ps, 83 ps );
+#    Time: 155810290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(51): $setup( posedge D:155870251 ps, negedge CLK:155870281 ps, 42 ps );
+#    Time: 155870281 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[6] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:155890228 ps, negedge CLK:155890230 ps, 96 ps );
+#    Time: 155890230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# sending: c3
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:155990208 ps, :155990260 ps, 83 ps );
+#    Time: 155990260 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(53): $width( posedge CLK:155990243 ps, :155990290 ps, 83 ps );
+#    Time: 155990290 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:156070228 ps, negedge CLK:156070230 ps, 96 ps );
+#    Time: 156070230 ps  Iteration: 0  Instance: /tb/tas_0/\rx_serial_input_buffer_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:156090209 ps, negedge CLK:156090266 ps, 96 ps );
+#    Time: 156090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[7] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:156090209 ps, negedge CLK:156090266 ps, 96 ps );
+#    Time: 156090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[0] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:156090209 ps, negedge CLK:156090266 ps, 96 ps );
+#    Time: 156090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[1] 
+# ** Error: /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm/Digital_Standard_Cell_Library/verilog/LATCHX1.v(52): $setup( negedge D:156090209 ps, negedge CLK:156090266 ps, 96 ps );
+#    Time: 156090266 ps  Iteration: 0  Instance: /tb/tas_0/\data_buff_reg[6] 
+# End time: 21:39:57 on May 17,2020, Elapsed time: 0:00:05
+# Errors: 595, Warnings: 146

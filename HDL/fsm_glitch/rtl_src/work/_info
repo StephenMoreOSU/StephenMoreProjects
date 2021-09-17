@@ -1,0 +1,122 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/nfs/stak/users/mores/ECE_474/hmk3/rtl_src
+T_opt
+!s110 1587588870
+Vfh]DRT<IEIGM]WZGaKQZD3
+04 10 4 work glitchless fast 0
+=1-14feb5d110e3-5ea0af06-1d36b-bdb
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.5;63
+R0
+T_opt1
+!s110 1587593055
+V>?oWGTPckULT>l]1mMIW02
+04 10 4 work glitchy_tb fast 0
+=1-14feb5d110e3-5ea0bf5f-6891c-26dc
+R1
+R2
+n@_opt1
+R3
+R0
+vglitchless
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 8>ZNbH;6Xhn[ASY@f0bDk0
+Ii^CBm[kmQ=Rio2UKIfMJ13
+!s105 glitchless_sv_unit
+S1
+R0
+w1587588792
+8glitchless.sv
+Fglitchless.sv
+L0 1
+Z6 OL;L;10.5;63
+Z7 !s108 1587700671.000000
+!s107 glitchless.sv|
+!s90 glitchless.sv|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vglitchless_tb
+R4
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 kk:C7[9]F`7Sn@F9CAXBU2
+Il@NRk?4PJ9_Knk52dR8QI0
+!s105 glitchless_tb_sv_unit
+S1
+R0
+w1587700615
+8glitchless_tb.sv
+Fglitchless_tb.sv
+L0 4
+R6
+R7
+!s107 glitchless_tb.sv|
+!s90 glitchless_tb.sv|
+!i113 0
+R8
+R2
+vglitchy
+R4
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 3WGz33GcZQB4MPK5BRY1:2
+II=>1@=Q25699<TIPOnQhV0
+!s105 glitchy_sv_unit
+S1
+R0
+w1587511800
+8glitchy.sv
+Fglitchy.sv
+L0 1
+R6
+Z9 !s108 1587864416.000000
+!s107 glitchy.sv|
+!s90 glitchy.sv|
+!i113 0
+R8
+R2
+vglitchy_tb
+R4
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 Ohf9Q0EP]z6:ST6?]F?^63
+IRO@KdPBUKNdF@RKU:m9j=3
+!s105 glitchy_tb_sv_unit
+S1
+R0
+w1587700621
+8glitchy_tb.sv
+Fglitchy_tb.sv
+L0 4
+R6
+R9
+!s107 glitchy_tb.sv|
+!s90 glitchy_tb.sv|
+!i113 0
+R8
+R2
